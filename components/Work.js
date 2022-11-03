@@ -29,7 +29,6 @@ export default function Work() {
       x: 0,
       opacity: 1,
       transition: { delay: delay, duration: 1, ease: [0.17, 0.55, 0.55, 1] },
-      viewport: { once: false },
     }),
   };
 

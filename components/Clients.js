@@ -39,7 +39,7 @@ export default function Clients() {
           </motion.span>
         </div>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center  mb-[300px]">
         <div className="flex max-w-[1900px] justify-around flex-wrap">
           <img
             className="m-6 md:m-12"

@@ -1,7 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
-import useMousePosition from "../hooks/useMousePosition";
-import TestMouse from "./TestMouse";
+import { useState, useRef } from "react";
 
 function getRelativeCoordinates(event, referenceElement) {
   const position = {
@@ -106,7 +104,11 @@ export const Accordion = ({
   const boxRef = useRef();
   const handleMouseMove = (e) => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
-    console.log(getRelativeCoordinates(e, boxRef.current));
+    console.log(mousePosition);
+  };
+
+  const handeMouseOut = (e) => {
+    console.log("mouse has gone out!");
   };
 
   return (
@@ -129,7 +131,7 @@ export const Accordion = ({
           animate={{
             opacity: isOpen ? 1 : 0,
             x: mousePosition.x,
-            y: mousePosition.y,
+            y: mousePosition.y - 500,
           }}
         >
           <img className="pointer-events-none" src={hoverImg} alt="" />
