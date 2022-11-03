@@ -1,5 +1,5 @@
 import MenuButton from "../public/svgs/menuButton.svg";
-import MarvikHeaderLogo from "../public/svgs/MarvikHeaderLogo.svg";
+import MarvikHeaderLogo from "../public/svgs/marvikHeaderLogo.svg";
 import { motion } from "framer-motion";
 
 export default function header() {
