@@ -9,7 +9,7 @@ import Clients from "../components/Clients";
 import Loader from "../components/Loader";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loading

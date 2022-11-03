@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Clients() {
   return (
@@ -41,68 +42,33 @@ export default function Clients() {
       </div>
       <div className="w-full flex justify-center  mb-[300px]">
         <div className="flex max-w-[1900px] justify-around flex-wrap">
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
-          <img
-            className="m-6 md:m-12"
-            src="https://dummyimage.com/300x200/4d8f7b/fff"
-            alt=""
-          />
+          {clientList.map((client) => (
+            <div className="m-6 md:m-12">
+              <Image
+                src="https://dummyimage.com/300x200/4d8f7b/fff"
+                alt={client}
+                width={300}
+                height={200}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>
   );
 }
+
+const clientList = [
+  "orange",
+  "apple",
+  "watermelon",
+  "orange",
+  "apple",
+  "watermelon",
+  "orange",
+  "apple",
+  "watermelon",
+  "orange",
+  "apple",
+  "watermelon",
+];

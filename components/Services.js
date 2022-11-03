@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useState, useRef } from "react";
 
 function getRelativeCoordinates(event, referenceElement) {
@@ -134,20 +135,14 @@ export const Accordion = ({
             y: mousePosition.y - 500,
           }}
         >
-          <img className="pointer-events-none" src={hoverImg} alt="" />
+          <Image
+            className="pointer-events-none"
+            src={hoverImg}
+            alt=""
+            width={800}
+            height={1000}
+          />
         </motion.div>
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: isOpen ? 1 : 0,
-            x: x,
-            y: y - 12500,
-          }}
-          transition={{ type: "tween" }}
-          className="absolute pointer-events-none"
-        >
-          <img className="pointer-events-none" src={hoverImg} alt="" />
-        </motion.div> */}
       </motion.h2>
       <AnimatePresence initial={false}>
         {isOpen && (

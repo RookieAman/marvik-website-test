@@ -1,6 +1,7 @@
 import MarvikGlyph from "../public/svgs/marvikGlyph.svg";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Work() {
   const [scrollY, setScrollY] = useState(0);
@@ -87,7 +88,7 @@ export default function Work() {
             </motion.h2>
           </div>
           <div className="flex justify-center mb-16 sm:pl-[10vw] -z-10">
-            <motion.img
+            <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
@@ -96,9 +97,14 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              src="https://dummyimage.com/1800x1200/aba2ab/917e91.jpg"
-              alt="HeroImg 1"
-            />
+            >
+              <Image
+                src="https://dummyimage.com/1800x1200/aba2ab/917e91.jpg"
+                alt="user profile picture"
+                width={1800}
+                height={1200}
+              />
+            </motion.div>
           </div>
           <div className="flex justify-between sm:ml-[20vw] max-w-[1700px]  mb-16">
             <motion.div
@@ -229,7 +235,7 @@ export default function Work() {
           </motion.h2>
         </div>
         <div className="flex flex-col lg:flex-row justify-center px-5">
-          <motion.img
+          <motion.div
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
@@ -239,9 +245,14 @@ export default function Work() {
             }}
             viewport={{ once: true }}
             className="sm:max-w-[400px] xl:max-w-[800px] sm:self-center"
-            src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
-            alt="Shukran Project"
-          />
+          >
+            <Image
+              src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
+              alt="Shukran Project"
+              width={800}
+              height={1100}
+            />
+          </motion.div>
           <motion.div
             initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -315,7 +326,7 @@ export default function Work() {
             app of
           </motion.div>
           <div className="flex items-end">
-            <motion.img
+            <motion.div
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
@@ -325,9 +336,14 @@ export default function Work() {
               }}
               viewport={{ once: true }}
               className="mt-10 mb-6 md:my-0 max-w-[370px] sm:max-w-[400px] xl:max-w-[700px] 2xl:max-w-[800px] sm:self-center mx-5 sm:mx-[2vw]"
-              src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
-              alt="Shukran Project"
-            />
+            >
+              <Image
+                src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
+                alt="Shukran Project"
+                width={800}
+                height={1100}
+              />
+            </motion.div>
           </div>
 
           <div className="flex w-full justify-center md:block md:w-auto">
