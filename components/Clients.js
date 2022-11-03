@@ -42,8 +42,8 @@ export default function Clients() {
       </div>
       <div className="w-full flex justify-center  mb-[300px]">
         <div className="flex max-w-[1900px] justify-around flex-wrap">
-          {clientList.map((client) => (
-            <div className="m-6 md:m-12">
+          {clientList.map((client, i) => (
+            <div className="m-6 md:m-12" key={i}>
               <Image
                 src="https://dummyimage.com/300x200/4d8f7b/fff"
                 alt={client}
