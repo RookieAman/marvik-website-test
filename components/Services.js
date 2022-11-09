@@ -108,10 +108,6 @@ export const Accordion = ({
     console.log(mousePosition);
   };
 
-  const handeMouseOut = (e) => {
-    console.log("mouse has gone out!");
-  };
-
   return (
     <motion.div
       ref={boxRef}
@@ -126,23 +122,26 @@ export const Accordion = ({
         className="font-biotiflight text-4xl lg:text-7xl 2xl:text-9xl max-w-[700px] mb-12 flex"
       >
         {title}
-        <motion.div
-          className="absolute hidden md:block md:w-[400px] md:h-[600px] 2xl:w-[800px] 2xl:h-[1000px]"
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: isOpen ? 1 : 0,
-            x: mousePosition.x,
-            y: mousePosition.y - 500,
-          }}
-        >
-          <Image
-            className="pointer-events-none"
+        {mousePosition.x && (
+          <motion.div
+            className="absolute hidden md:block md:w-[400px] md:h-[600px] 2xl:w-[800px] 2xl:h-[1000px]"
             src={hoverImg}
-            alt=""
-            width={800}
-            height={1000}
-          />
-        </motion.div>
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: isOpen && mousePosition.x ? 1 : 0,
+              x: mousePosition.x,
+              y: mousePosition.y - 500,
+            }}
+          >
+            <Image
+              className="pointer-events-none"
+              src={hoverImg}
+              alt=""
+              width={800}
+              height={1000}
+            />
+          </motion.div>
+        )}
       </motion.h2>
       <AnimatePresence initial={false}>
         {isOpen && (
@@ -193,14 +192,8 @@ const accordionIds = [
   },
   {
     id: 3,
-    title: "Tech",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
-  },
-  {
-    id: 4,
-    title: "Marketing & Communication",
-    desc: "Vivamus fermentum semper et natoque curae facilisis",
+    title: "Design",
+    desc: "Nisi accumsan tempus mauris platea metus duis facilisis",
     img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
   },
 ];
