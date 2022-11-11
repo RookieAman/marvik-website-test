@@ -1,14 +1,16 @@
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { Accordion } from "./Accordion";
 
 export default function Services() {
   const [expanded, setExpanded] = useState();
-  const { title, desc, img } = accordionIds;
+
+  const handleMouseOut = () => {
+    console.log("Mouse went out mofokers!");
+  };
 
   return (
-    <div className="px-5 md:px-14 mb-[700px]">
+    <div className="px-5 md:px-14 mb-[700px]" onMouseOut={handleMouseOut}>
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -44,6 +46,12 @@ export default function Services() {
         </motion.span>
       </div>
 
+      <div
+        className="separator h-[100px] w-full bg-slate-800"
+        onMouseEnter={() => {
+          setExpanded();
+        }}
+      ></div>
       <div>
         {accordionIds.map(({ id, title, desc, img }) => (
           <Accordion
@@ -57,6 +65,12 @@ export default function Services() {
           />
         ))}
       </div>
+      <div
+        className="separator h-[100px] w-full bg-slate-800"
+        onMouseEnter={() => {
+          setExpanded();
+        }}
+      ></div>
     </div>
   );
 }
@@ -64,7 +78,7 @@ export default function Services() {
 const accordionIds = [
   {
     id: 0,
-    title: "Business transformation",
+    title: "Business",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
   },

@@ -52,7 +52,7 @@ const banner = () => {
         <motion.h1
           initial={{ color: "#FFF" }}
           animate={{ color: "#000" }}
-          className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-4xl font-biotiflight"
+          className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-4xl font-biotiflight max-w-[430px] md:max-w-none"
         >
           <div className="line">
             <span className="row-title inline-block overflow-hidden">
