@@ -321,7 +321,7 @@ export default function Work() {
               ease: [0.17, 0.55, 0.55, 1],
             }}
             viewport={{ once: true }}
-            className="line text-3xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
+            className="line text-7xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
           >
             app of
           </motion.div>
@@ -356,11 +356,11 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="line text-3xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
+              className="line text-7xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
             >
               the day
             </motion.div>
-            {/* <motion.div
+            <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
@@ -369,7 +369,7 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="line absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
+              className="line sm:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
               <h3 className="max-w-[570px] text-2xl font-biotifbold mb-6 mt-20">
                 Dominating the charts, motherfuckers
@@ -391,7 +391,7 @@ export default function Work() {
                   <span>SEE CASE STUDY</span>
                 </a>
               </div>
-            </motion.div> */}
+            </motion.div>
           </div>
         </div>
       </div>
