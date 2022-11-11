@@ -42,7 +42,7 @@ export default function Work() {
           animate="visible"
           direction="left"
           delay={0.5}
-          className="uppercase text-8xl md:text-[15vw] text-biotiflight"
+          className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
           Work
         </motion.h1>
@@ -51,7 +51,7 @@ export default function Work() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1, ease: [0.17, 0.55, 0.55, 1] }}
           viewport={{ once: true }}
-          className="line w-full border-b-2 border-black hidden md:block"
+          className="line w-full border-b-2 border-black"
         ></motion.div>
         <div className="flex justify-end mt-8 mb-36 md:mb-60">
           <motion.span
@@ -396,7 +396,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center mb-[800px] sm:mb-[500px]">
+      {/* <div className="w-full flex justify-center items-center mb-[800px] sm:mb-[500px]">
         <div className="marvikCircle relative w-[160px] md:w-[360px] h-[160px] md:h-[360px] rounded-[100%] flex justify-center items-center mr-[30px] md:mr-[100px]">
           <MarvikGlyph className="w-[70px] md:w-[170px] absolute" />
           <div
@@ -424,7 +424,7 @@ export default function Work() {
             <span>EXPLORE OUR WORK</span>
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
