@@ -217,7 +217,7 @@ export default function Work() {
         </div>
       </div>
 
-      {/* <div className="w-full mb-[200px] sm:mb-[500px]">
+      <div className="w-full mb-[200px] sm:mb-[500px]">
         <div className="flex justify-center lg:justify-around px-[10vw] -mb-6 md:-mb-12">
           <div></div>
           <motion.h2
@@ -293,7 +293,7 @@ export default function Work() {
             future
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="w-full mb-[800px] sm:mb-[500px]">
         <div className="flex justify-center">
