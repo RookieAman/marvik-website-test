@@ -45,7 +45,7 @@ const loader = ({ setLoading }) => {
   return (
     <section className="main bg-black h-[100vh] w-full">
       <div className="md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
-        <h1 className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-4xl font-biotiflight text-white">
+        <h1 className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-3xl font-biotiflight text-white">
           <div className="line">
             <AnimatedLetters customDelay={0.4} title={`Brand,\u00A0`} />
             <AnimatedLetters customDelay={1.5} title={`meet \u00A0 future.`} />
