@@ -217,7 +217,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[200px] sm:mb-[500px]">
+      {/* <div className="w-full mb-[200px] sm:mb-[500px]">
         <div className="flex justify-center lg:justify-around px-[10vw] -mb-6 md:-mb-12">
           <div></div>
           <motion.h2
@@ -293,9 +293,9 @@ export default function Work() {
             future
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-full mb-[800px] sm:mb-[500px]">
+      {/* <div className="w-full mb-[800px] sm:mb-[500px]">
         <div className="flex justify-center">
           <motion.h2
             initial={{ y: -200, opacity: 0 }}
@@ -394,7 +394,7 @@ export default function Work() {
             </motion.div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="w-full flex justify-center items-center mb-[800px] sm:mb-[500px]">
         <div className="marvikCircle relative w-[160px] md:w-[360px] h-[160px] md:h-[360px] rounded-[100%] flex justify-center items-center mr-[30px] md:mr-[100px]">
