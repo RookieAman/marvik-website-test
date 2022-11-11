@@ -22,7 +22,7 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <div className="font-biotif w-[100vw]">
+    <div className="font-biotif w-full">
       <Head>
         <title>Marvik Website</title>
       </Head>
@@ -34,8 +34,8 @@ export default function Home() {
           <Header />
           <Banner />
           <Work />
-          <Services />
-          <Clients />
+          {/* <Services />
+          <Clients /> */}
           <div className="h-[1000px] bg-[#FFB32B]"></div>
         </>
       )}

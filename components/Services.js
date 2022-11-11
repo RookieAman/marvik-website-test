@@ -5,12 +5,8 @@ import { Accordion } from "./Accordion";
 export default function Services() {
   const [expanded, setExpanded] = useState();
 
-  const handleMouseOut = () => {
-    console.log("Mouse went out mofokers!");
-  };
-
   return (
-    <div className="sm:px-5 md:px-14 mb-[700px]" onMouseOut={handleMouseOut}>
+    <div className="sm:px-5 md:px-14 mb-[700px]">
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

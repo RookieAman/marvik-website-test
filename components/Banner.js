@@ -46,7 +46,7 @@ const banner = () => {
     <motion.section
       initial={{ backgroundColor: "#000" }}
       animate={{ backgroundColor: "#FFF" }}
-      className="main w-full"
+      className="main w-full h-[100vh]"
     >
       <div className="md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
         <motion.h1
