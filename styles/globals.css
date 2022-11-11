@@ -21,6 +21,7 @@ body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 html {
