@@ -43,7 +43,7 @@ const AnimatedLetters = ({ title, customDelay, setLoading }) => (
 
 const loader = ({ setLoading }) => {
   return (
-    <section className="main bg-black h-[100vh] w-full">
+    <section className="main bg-black h-[100vh] w-[100vw]">
       <div className="md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
         <h1 className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-4xl font-biotiflight text-white">
           <div className="line">

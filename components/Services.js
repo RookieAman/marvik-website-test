@@ -10,7 +10,7 @@ export default function Services() {
   };
 
   return (
-    <div className="px-5 md:px-14 mb-[700px]" onMouseOut={handleMouseOut}>
+    <div className="sm:px-5 md:px-14 mb-[700px]" onMouseOut={handleMouseOut}>
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
