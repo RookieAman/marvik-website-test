@@ -295,7 +295,7 @@ export default function Work() {
         </div>
       </div>
 
-      {/* <div className="w-full mb-[800px] sm:mb-[500px]">
+      <div className="w-full mb-[800px] sm:mb-[500px]">
         <div className="flex justify-center">
           <motion.h2
             initial={{ y: -200, opacity: 0 }}
@@ -311,7 +311,7 @@ export default function Work() {
             myrealfood
           </motion.h2>
         </div>
-        <div className="flex justify-center items-center flex-col md:flex-row">
+        <div className="flex w-full justify-center items-center flex-col md:flex-row">
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -321,7 +321,7 @@ export default function Work() {
               ease: [0.17, 0.55, 0.55, 1],
             }}
             viewport={{ once: true }}
-            className="line text-7xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
+            className="line text-3xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
           >
             app of
           </motion.div>
@@ -356,11 +356,11 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="line text-7xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
+              className="line text-3xl md:text-[6vw] leading-6 xl:text-[4.5vw] 2xl:text-[7vw] sm:tracking-[.05vw] xl:leading-[3.5vw] 2xl:leading-[5vw] text-gray-300"
             >
               the day
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
@@ -391,10 +391,10 @@ export default function Work() {
                   <span>SEE CASE STUDY</span>
                 </a>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="w-full flex justify-center items-center mb-[800px] sm:mb-[500px]">
         <div className="marvikCircle relative w-[160px] md:w-[360px] h-[160px] md:h-[360px] rounded-[100%] flex justify-center items-center mr-[30px] md:mr-[100px]">
