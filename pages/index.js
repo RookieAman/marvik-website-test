@@ -22,7 +22,7 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <div className="font-biotif w-full">
+    <div className="font-biotif w-full overflow-x-hidden">
       <Head>
         <title>Marvik Website</title>
       </Head>
