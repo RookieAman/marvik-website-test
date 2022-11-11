@@ -33,7 +33,7 @@ export default function Home() {
         <>
           <Header />
           <Banner />
-          {/* <Work /> */}
+          <Work />
           <Services />
           <Clients />
           <div className="h-[1000px] bg-[#FFB32B]"></div>
