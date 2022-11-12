@@ -6,13 +6,13 @@ export default function Services() {
   const [expanded, setExpanded] = useState();
 
   return (
-    <div className="sm:px-5 md:px-14 mb-[700px]">
+    <div className="px-5 md:px-14 mb-[300px]">
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 1, ease: [0.17, 0.55, 0.55, 1] }}
         viewport={{ once: true }}
-        className="uppercase text-8xl md:text-[15vw] text-biotiflight"
+        className="uppercase text-6xl md:text-[15vw] text-biotiflight"
       >
         Services
       </motion.h1>

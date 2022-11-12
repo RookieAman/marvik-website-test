@@ -35,7 +35,7 @@ export default function Work() {
 
   return (
     <>
-      <div className="px-5 md:px-14 mt-[200px] xl:mt-[500px]">
+      <div className="px-5 md:px-14 mt-[300px] xl:mt-[500px]">
         <motion.h1
           variants={viewVariants}
           initial="hidden"
@@ -53,7 +53,7 @@ export default function Work() {
           viewport={{ once: true }}
           className="line w-full border-b-2 border-black"
         ></motion.div>
-        <div className="flex justify-end mt-8 mb-36 md:mb-60">
+        <div className="flex justify-end mt-8 mb-20 md:mb-60">
           <motion.span
             initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -106,7 +106,7 @@ export default function Work() {
               />
             </motion.div>
           </div>
-          <div className="flex justify-between sm:ml-[20vw] max-w-[1700px]  mb-16">
+          <div className="flex justify-between sm:ml-[20vw] max-w-[1700px] mb-16">
             <motion.div
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -118,7 +118,7 @@ export default function Work() {
               viewport={{ once: true }}
               className="line"
             >
-              <h3 className="max-w-[370px] text-2xl font-biotifbold mb-6">
+              <h3 className="max-w-[400px] text-2xl font-biotifbold mb-6">
                 How we transformed a social media movement into a leading food
                 brand
               </h3>
@@ -136,22 +136,6 @@ export default function Work() {
               social movement, <br />
               leading brand.
             </div>
-          </div>
-          <div className="sm:ml-[20vw]">
-            <motion.a
-              initial={{ x: 200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.5,
-                duration: 1,
-                ease: [0.17, 0.55, 0.55, 1],
-              }}
-              viewport={{ once: true }}
-              href="#"
-              className="text-xl sm:text-2xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
-            >
-              <span>SEE CASE STUDY</span>
-            </motion.a>
           </div>
         </div>
       </div>
@@ -171,7 +155,7 @@ export default function Work() {
                 viewport={{ once: true }}
                 className="font-biotifbold text-6xl md:text-9xl z-10 text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12"
               >
-                Hub nd <br /> Rock
+                Hub &<br /> Rock
               </motion.h2>
 
               <motion.div
@@ -185,7 +169,7 @@ export default function Work() {
                 viewport={{ once: true }}
                 className="sm:ml-12"
               >
-                <h3 className="text-white max-w-[370px] text-2xl font-biotifbold mb-6">
+                <h3 className="text-white max-w-[400px] text-2xl font-biotifbold mb-6">
                   How we transformed a social media movement into a leading food
                   brand
                 </h3>
@@ -198,14 +182,14 @@ export default function Work() {
                   <li>busieness transformation</li>
                 </ul>
 
-                <div className="line">
+                {/* <div className="line">
                   <a
                     href="#"
                     className="text-xl sm:text-2xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
                   >
                     <span>SEE CASE STUDY</span>
                   </a>
-                </div>
+                </div> */}
               </motion.div>
             </div>
 
@@ -264,7 +248,7 @@ export default function Work() {
             viewport={{ once: true }}
             className="line sm:ml-[10vw]"
           >
-            <h3 className="max-w-[370px] text-2xl font-biotifbold mb-6 mt-20">
+            <h3 className="max-w-[380px] text-2xl font-biotifbold mb-6 mt-20">
               How we transformed a social media movement into a leading food
               brand
             </h3>
@@ -276,15 +260,6 @@ export default function Work() {
               <li>ux/ui design</li>
               <li>busieness transformation</li>
             </ul>
-
-            <div className="line">
-              <a
-                href="#"
-                className="text-xl sm:text-2xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
-              >
-                <span>SEE CASE STUDY</span>
-              </a>
-            </div>
           </motion.div>
 
           <div className="line self-end text-3xl leading-6 sm:text-[5.5vw] sm:tracking-[.05vw] sm:leading-[4.5vw] text-gray-300">
@@ -295,7 +270,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[800px] sm:mb-[500px]">
+      <div className="w-full mb-[300px] sm:mb-[500px]">
         <div className="flex justify-center">
           <motion.h2
             initial={{ y: -200, opacity: 0 }}
@@ -346,7 +321,7 @@ export default function Work() {
             </motion.div>
           </div>
 
-          <div className="flex w-full justify-center md:block md:w-auto">
+          <div className="flex w-full justify-center items-center md:items-start flex-col md:flex-row md:block md:w-auto">
             <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -369,7 +344,7 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="line sm:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
+              className="line md:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
               <h3 className="max-w-[570px] text-2xl font-biotifbold mb-6 mt-20">
                 Dominating the charts, motherfuckers
@@ -396,7 +371,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center mb-[800px] sm:mb-[500px]">
+      <div className="w-full flex justify-center items-center mb-[300px] sm:mb-[500px]">
         <div className="marvikCircle relative w-[160px] md:w-[360px] h-[160px] md:h-[360px] rounded-[100%] flex justify-center items-center mr-[30px] md:mr-[100px]">
           <MarvikGlyph className="w-[70px] md:w-[170px] absolute" />
           <div
@@ -419,9 +394,9 @@ export default function Work() {
         <div>
           <a
             href="#"
-            className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
+            className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold uppercase"
           >
-            <span>EXPLORE OUR WORK</span>
+            <span>Contactanos</span>
           </a>
         </div>
       </div>

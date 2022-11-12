@@ -48,11 +48,11 @@ const banner = () => {
       animate={{ backgroundColor: "#FFF" }}
       className="main w-full h-[100vh]"
     >
-      <div className="md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
+      <div className="px-5 md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
         <motion.h1
           initial={{ color: "#FFF" }}
           animate={{ color: "#000" }}
-          className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-3xl font-biotiflight max-w-[430px] md:max-w-none"
+          className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-3xl tracking-tight font-biotiflight max-w-[430px] md:max-w-none"
         >
           <div className="line">
             <span className="row-title inline-block overflow-hidden">
@@ -81,7 +81,7 @@ const banner = () => {
         </motion.h1>
       </div>
 
-      <div className="px-[8vw] xl:px-0 justify-center flex flex-col-reverse md:flex-row">
+      <div className="px-5 xl:px-0 justify-center flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-auto flex justify-center md:justify-start mr-[7vw]">
           <motion.div
             initial={{ opacity: 0, y: 80 }}
