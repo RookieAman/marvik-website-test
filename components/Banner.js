@@ -74,19 +74,19 @@ const banner = () => {
               ))}
             </span>
           </div>
-          <div className="line font-biotifbold text-[29px] md:text-[4.5vw] hidden sm:block">
+          <div className="line font-biotifbold text-[29px] md:text-[4.5vw] break-words">
             <AnimatedLetters
               customDelay={0.2}
               title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik.`}
             />
           </div>
-          <div className="line font-biotifbold text-[29px] md:text-[4.5vw] block sm:hidden">
+          {/* <div className="line font-biotifbold text-[29px] md:text-[4.5vw] block sm:hidden">
             <AnimatedLetters
               maxW={300}
               customDelay={0.2}
               title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik.`}
             />
-          </div>
+          </div> */}
         </motion.h1>
       </div>
 
