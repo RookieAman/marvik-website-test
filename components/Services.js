@@ -21,7 +21,7 @@ export default function Services() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 1, ease: [0.17, 0.55, 0.55, 1] }}
         viewport={{ once: true }}
-        className="line w-full border-b-2 border-black hidden md:block"
+        className="line w-full border-b-2 border-black"
       ></motion.div>
       <div className="flex justify-end mt-8 mb-36 md:mb-60">
         <motion.span

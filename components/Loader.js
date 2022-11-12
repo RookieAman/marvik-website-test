@@ -47,20 +47,20 @@ const loader = ({ setLoading }) => {
       <div className="px-5 md:pt-[16vw] flex justify-center pb-[7vw] pt-[40vw]">
         <h1 className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-3xl tracking-tight font-biotiflight text-white">
           <div className="line">
-            <AnimatedLetters customDelay={0.4} title={`Brand,\u00A0`} />
-            <AnimatedLetters customDelay={1.5} title={`meet \u00A0 future.`} />
+            <AnimatedLetters customDelay={0.4} title={`Empresa,\u00A0`} />
+            <AnimatedLetters customDelay={1.5} title={`futuro.`} />
           </div>
           <div className="line">
-            <AnimatedLetters customDelay={3} title={`Future,\u00A0`} />
+            <AnimatedLetters customDelay={3} title={`Futuro,\u00A0`} />
             <AnimatedLetters
               setLoading={setLoading}
               customDelay={4.1}
-              title={`meet \u00A0 brand.`}
+              title={`empresa.`}
             />
           </div>
           <div className="line font-biotifbold text-black">
             <span className="row-title inline-block overflow-hidden">
-              {["A,\u00A0match\u00A0made\u00A0in\u00A0Marvik."].map(
+              {["Una\u00A0conexión\u00A0hecha\u00A0en\u00A0Marvik."].map(
                 (letter, i) => (
                   <span key={i} className="inline-block row-letter">
                     {letter}

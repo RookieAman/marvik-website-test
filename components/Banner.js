@@ -56,7 +56,7 @@ const banner = () => {
         >
           <div className="line">
             <span className="row-title inline-block overflow-hidden">
-              {["Brand, meet future."].map((letter, i) => (
+              {["Empresa, futuro."].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">
                   {letter}
                 </span>
@@ -65,17 +65,17 @@ const banner = () => {
           </div>
           <div className="line">
             <span className="row-title inline-block overflow-hidden">
-              {["Future, meet brand."].map((letter, i) => (
+              {["Futuro, empresa."].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">
                   {letter}
                 </span>
               ))}
             </span>
           </div>
-          <div className="line font-biotifbold">
+          <div className="line font-biotifbold text-[29px] md:text-[4.5vw]">
             <AnimatedLetters
               customDelay={0.2}
-              title={`A,\u00A0 match \u00A0 made \u00A0 in \u00A0 Marvik.`}
+              title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik.`}
             />
           </div>
         </motion.h1>
@@ -103,7 +103,7 @@ const banner = () => {
             ease: "easeInOut",
             duration: 0.5,
           }}
-          className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+          className="line md:max-w-[750px] pb-24 md:pb-0 text-lg lg:text-2xl"
         >
           <span>
             We build brands and elevate companies to the status of game
