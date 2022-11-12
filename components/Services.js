@@ -6,7 +6,7 @@ export default function Services() {
   const [expanded, setExpanded] = useState();
 
   return (
-    <div className="px-5 md:px-14 mb-[300px]">
+    <div className="px-5 md:px-14 mb-[150px]">
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -23,7 +23,7 @@ export default function Services() {
         viewport={{ once: true }}
         className="line w-full border-b-2 border-black"
       ></motion.div>
-      <div className="flex justify-end mt-8 mb-20 md:mb-60">
+      <div className="flex justify-end mt-8 mb-8 md:mb-60">
         <motion.span
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

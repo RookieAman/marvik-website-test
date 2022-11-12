@@ -270,7 +270,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[300px] sm:mb-[500px]">
+      <div className="w-full mb-[150px] sm:mb-[500px]">
         <div className="flex justify-center">
           <motion.h2
             initial={{ y: -200, opacity: 0 }}
@@ -371,7 +371,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center mb-[300px] sm:mb-[500px]">
+      <div className="w-full flex justify-center items-center mb-[200px] sm:mb-[500px]">
         <div className="marvikCircle relative w-[160px] md:w-[360px] h-[160px] md:h-[360px] rounded-[100%] flex justify-center items-center mr-[30px] md:mr-[100px]">
           <MarvikGlyph className="w-[70px] md:w-[170px] absolute" />
           <div
