@@ -68,12 +68,12 @@ export const Accordion = ({
             }}
             className="w-full"
           >
-            <span className="example font-light  text-xl">{desc}</span>
+            <span className="example font-light text-xl">{desc}</span>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
               transition={{ delay: 0.2 }}
-              className="md:mt-6 xl:mt-24 line w-full border-b-2 border-black"
+              className="mt-6 xl:mt-24 line w-full border-b-2 border-black"
             ></motion.div>
           </motion.div>
         )}

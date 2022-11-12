@@ -35,7 +35,7 @@ export default function Work() {
 
   return (
     <>
-      <div className="px-5 md:px-14 mt-[300px] xl:mt-[500px]">
+      <div className="px-5 md:px-14 mt-[400px] xl:mt-[500px]">
         <motion.h1
           variants={viewVariants}
           initial="hidden"
@@ -169,7 +169,7 @@ export default function Work() {
                 viewport={{ once: true }}
                 className="sm:ml-12"
               >
-                <h3 className="text-white max-w-[400px] text-2xl font-biotifbold mb-6">
+                <h3 className="text-white max-w-[450px] text-2xl font-biotifbold mb-6">
                   How we transformed a social media movement into a leading food
                   brand
                 </h3>
@@ -358,14 +358,14 @@ export default function Work() {
                 <li>busieness transformation</li>
               </ul>
 
-              <div className="line">
+              {/* <div className="line">
                 <a
                   href="#"
                   className="text-xl sm:text-2xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
                 >
                   <span>SEE CASE STUDY</span>
                 </a>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

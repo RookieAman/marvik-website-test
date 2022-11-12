@@ -23,7 +23,7 @@ export default function Services() {
         viewport={{ once: true }}
         className="line w-full border-b-2 border-black"
       ></motion.div>
-      <div className="flex justify-end mt-8 mb-36 md:mb-60">
+      <div className="flex justify-end mt-8 mb-20 md:mb-60">
         <motion.span
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ export default function Services() {
             ease: [0.17, 0.55, 0.55, 1],
           }}
           viewport={{ once: true }}
-          className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+          className="line md:max-w-[750px] md:pb-0 text-lg lg:text-2xl"
         >
           We build brands and elevate companies to the status of game changers.
           We don’t settle until we create a better tomorrow for your company,
@@ -43,7 +43,7 @@ export default function Services() {
       </div>
 
       <div
-        className="separator h-[100px] w-full bg-slate-800"
+        className="separator h-[100px] w-full"
         onMouseEnter={() => {
           setExpanded();
         }}
@@ -62,7 +62,7 @@ export default function Services() {
         ))}
       </div>
       <div
-        className="separator h-[100px] w-full bg-slate-800"
+        className="separator h-[100px] w-full"
         onMouseEnter={() => {
           setExpanded();
         }}
