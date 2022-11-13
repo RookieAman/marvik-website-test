@@ -396,7 +396,7 @@ export default function Work() {
             href="#"
             className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold uppercase"
           >
-            <span>Contactanos</span>
+            <span>Contáctanos</span>
           </a>
         </div>
       </div>
