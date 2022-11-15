@@ -77,7 +77,7 @@ const banner = () => {
           <div className="line font-biotifbold text-[28px] md:text-[4.5vw] break-normal inline-block">
             <AnimatedLetters
               customDelay={0.2}
-              title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik.`}
+              title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik`}
             />
           </div>
           {/* <div className="line font-biotifbold text-[29px] md:text-[4.5vw] block sm:hidden">

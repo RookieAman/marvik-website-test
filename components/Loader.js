@@ -60,7 +60,7 @@ const loader = ({ setLoading }) => {
           </div>
           <div className="line font-biotifbold text-black">
             <span className="row-title inline-block overflow-hidden">
-              {["Una\u00A0conexión\u00A0hecha\u00A0en\u00A0Marvik."].map(
+              {["Una\u00A0conexión\u00A0hecha\u00A0en\u00A0Marvik"].map(
                 (letter, i) => (
                   <span key={i} className="inline-block row-letter">
                     {letter}
