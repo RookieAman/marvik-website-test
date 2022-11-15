@@ -45,7 +45,7 @@ const svgVariant2 = {
   },
 };
 
-export default function header() {
+const Header = () => {
   const [small, setSmall] = useState(false);
 
   useEffect(() => {
@@ -135,4 +135,6 @@ export default function header() {
       </AnimatePresence>
     </>
   );
-}
+};
+
+export default Header;
