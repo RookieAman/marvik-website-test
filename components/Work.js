@@ -155,10 +155,17 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[200px] sm:mb-[500px]">
-        <div className="w-full h-[800px] md:h-[1400px] bg-slate-600">
-          <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5">
-            <div className="line">
+      <div className="w-full mb-[200px] sm:mb-[500px] bg-black/10">
+        <div className="w-full h-[800px] md:h-[1400px]">
+          <video
+            className="w-full h-full object-cover -z-20 absolute"
+            src="/assets/HRbg.mp4"
+            autoPlay
+            loop
+            muted
+          ></video>
+          <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5 z-10">
+            <div className="line  mix-blend-difference">
               <motion.h2
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
