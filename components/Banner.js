@@ -93,7 +93,7 @@ const banner = () => {
       <div className="px-5 xl:px-0 justify-center flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-auto flex justify-center md:justify-start mr-[7vw]">
           <a
-            href="https://drive.google.com/file/d/12DeVMSKjzJPAZsnGZa4BLdIuqawwxe5X/view?usp=sharing"
+            href="https://drive.google.com/file/d/1cbNa7GaE-dDAZoH-Y-y-flhBl5McXwDM/view?usp=sharing"
             target={"_blank"}
             rel="noopener noreferrer"
           >
@@ -105,8 +105,12 @@ const banner = () => {
                 ease: "easeInOut",
                 duration: 0.5,
               }}
-              className="h-[350px] w-[250px] 2xl:h-[600px] 2xl:w-[400px] bg-black rounded-[220px] bg-[url('/assets/PresentationThumbnail.jpg')] bg-cover bg-center"
-            ></motion.div>
+              className="flex justify-center items-center h-[350px] w-[250px] 2xl:h-[600px] 2xl:w-[400px] bg-black rounded-[220px] bg-[url('/assets/PresentationThumbnail.jpg')] bg-cover bg-center pointer"
+            >
+              <span className="text-3xl text-white animate-flicker">
+                Saber más
+              </span>
+            </motion.div>
           </a>
         </div>
 
