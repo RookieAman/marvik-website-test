@@ -29,6 +29,10 @@
   .clientSvg {
     @apply h-full w-full max-w-[90px] lg:max-w-none;
   }
+
+  .videoDisplay {
+    @apply right-0 bottom-0 min-w-full min-h-full w-auto h-auto -z-20 bg-cover overflow-hidden;
+  }
 }
 
 body {
