@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div
       id="marvikFooter"
-      className="bg-[#FFB32B] flex justify-between flex-col-reverse xl:flex-row p-[5%]"
+      className="bg-[#FFB32B] flex justify-between flex-col-reverse xl:flex-row px-5 py-12 sm:p-[5%]"
     >
       <div className="w-full flex justify-between flex-col">
         <div className="mt-[70px] xl:mt-0">

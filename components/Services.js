@@ -84,7 +84,7 @@ const accordionIds = [
       4: "- Optimización contínua",
       5: "- Estrategía de lanzamiento y crecimiento",
     },
-    img: "/assets/Branding.jpg",
+    img: "/assets/Desgin.jpg",
   },
   {
     id: 1,
@@ -97,7 +97,8 @@ const accordionIds = [
       5: "- Brand Innovation",
       6: "- Estrategia y creación de contenidos",
     },
-    img: "/assets/Desgin.jpg",
+
+    img: "/assets/Branding.jpg",
   },
   {
     id: 2,
@@ -111,7 +112,7 @@ const accordionIds = [
       6: "- Big Data",
       7: "- Arquitectura de soluciones",
     },
-    img: "/assets/Marketing.jpg",
+    img: "/assets/Tech.jpg",
   },
   {
     id: 3,
@@ -123,18 +124,18 @@ const accordionIds = [
       4: "- Market intelligence",
       5: "- Modelos y análisis de datos",
     },
-    img: "/assets/Tech.jpg",
+    img: "/assets/Marketing.jpg",
   },
-  {
-    id: 4,
-    title: "Transformación digital",
-    desc: {
-      1: "- Estrategia digital",
-      2: "- Implementación metodologías Agile",
-      3: "- Modelos de negocio digitales",
-      4: "- Transformación de la experiencia de usuario",
-      5: "- Digitalización de las operaciones",
-    },
-    img: "/assets/Tech.jpg",
-  },
+  // {
+  //   id: 4,
+  //   title: "Transformación digital",
+  //   desc: {
+  //     1: "- Estrategia digital",
+  //     2: "- Implementación metodologías Agile",
+  //     3: "- Modelos de negocio digitales",
+  //     4: "- Transformación de la experiencia de usuario",
+  //     5: "- Digitalización de las operaciones",
+  //   },
+  //   img: "/assets/Tech.jpg",
+  // },
 ];

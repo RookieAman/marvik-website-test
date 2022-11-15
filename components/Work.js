@@ -7,10 +7,8 @@ export default function Work() {
   const [realfoodingImg, setrealfoodingImg] = useState(
     "/assets/RealfoodingStatic.jpg"
   );
-  const [hrImg, setHrImg] = useState("");
-  const [shukranImg, setShukranImg] = useState(
-    "https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
-  );
+  const [hrImg, setHrImg] = useState("/assets/HRbg.mp4");
+  const [shukranImg, setShukranImg] = useState("/assets/ShukranStatic.jpg");
   const [myrealfoodImg, setmyrealfoodImg] = useState(
     "/assets/MyrealfoodAPPStatic.jpg"
   );
@@ -86,6 +84,9 @@ export default function Work() {
               onMouseEnter={() => {
                 setrealfoodingImg("/assets/RealfoodingAnim.gif");
               }}
+              onClick={() => {
+                setrealfoodingImg("/assets/RealfoodingAnim.gif");
+              }}
               onMouseOut={() => {
                 setrealfoodingImg("/assets/RealfoodingStatic.jpg");
               }}
@@ -107,6 +108,9 @@ export default function Work() {
               whileHover={{ scale: 0.9 }}
               viewport={{ once: true }}
               onMouseEnter={() => {
+                setrealfoodingImg("/assets/RealfoodingAnim.gif");
+              }}
+              onClick={() => {
                 setrealfoodingImg("/assets/RealfoodingAnim.gif");
               }}
               onMouseOut={() => {
@@ -155,17 +159,17 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[200px] sm:mb-[500px] bg-black/10">
-        <div className="w-full h-[800px] md:h-[1400px]">
+      <div className="w-full mb-[200px] sm:mb-[500px] bg-black/50 md:bg-black/10">
+        <div className="w-full min-h-[750px] md:h-[1320px] customCursor">
           <video
-            className="w-full h-full object-cover -z-20 absolute"
-            src="/assets/HRbg.mp4"
+            className="w-full h-[750px] md:h-full object-cover -z-20 absolute"
+            src={hrImg}
             autoPlay
             loop
             muted
           ></video>
           <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5 z-10">
-            <div className="line  mix-blend-difference">
+            <div className="line md:mix-blend-difference">
               <motion.h2
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -235,7 +239,16 @@ export default function Work() {
               ease: [0.17, 0.55, 0.55, 1],
             }}
             viewport={{ once: true }}
-            className="font-biotifbold text-6xl md:text-9xl z-10 lg:ml-[400px]"
+            className="font-biotifbold text-6xl md:text-9xl z-10 lg:ml-[400px] customCursor"
+            onMouseEnter={() => {
+              setShukranImg("/assets/ShukranAnim.gif");
+            }}
+            onClick={() => {
+              setShukranImg("/assets/ShukranAnim.gif");
+            }}
+            onMouseOut={() => {
+              setShukranImg("/assets/ShukranStatic.jpg");
+            }}
           >
             Shukran
           </motion.h2>
@@ -245,14 +258,26 @@ export default function Work() {
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.5,
-              duration: 1,
               ease: [0.17, 0.55, 0.55, 1],
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
             }}
+            whileHover={{ scale: 0.9 }}
             viewport={{ once: true }}
-            className="sm:max-w-[400px] xl:max-w-[800px] sm:self-center"
+            className="sm:max-w-[400px] xl:max-w-[800px] sm:self-center customCursor"
+            onMouseEnter={() => {
+              setShukranImg("/assets/ShukranAnim.gif");
+            }}
+            onClick={() => {
+              setShukranImg("/assets/ShukranAnim.gif");
+            }}
+            onMouseOut={() => {
+              setShukranImg("/assets/ShukranStatic.jpg");
+            }}
           >
             <Image
+              className="rounded-[30px]"
               src={shukranImg}
               alt="Shukran Project"
               width={800}
@@ -307,6 +332,9 @@ export default function Work() {
             onMouseEnter={() => {
               setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
             }}
+            onClick={() => {
+              setrealfoodingImg("/assets/MyrealfoodAPPAnim.gif");
+            }}
             onMouseOut={() => {
               setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
             }}
@@ -333,20 +361,26 @@ export default function Work() {
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
-                delay: 0.8,
-                duration: 1,
                 ease: [0.17, 0.55, 0.55, 1],
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
               }}
+              whileHover={{ scale: 0.9 }}
               viewport={{ once: true }}
               className="mt-10 mb-6 md:my-0 max-w-[370px] sm:max-w-[400px] xl:max-w-[700px] 2xl:max-w-[800px] sm:self-center mx-5 sm:mx-[2vw] customCursor"
               onMouseEnter={() => {
                 setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
+              }}
+              onClick={() => {
+                setrealfoodingImg("/assets/MyrealfoodAPPAnim.gif");
               }}
               onMouseOut={() => {
                 setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
               }}
             >
               <Image
+                className="rounded-[30px]"
                 src={myrealfoodImg}
                 alt="Shukran Project"
                 width={800}
