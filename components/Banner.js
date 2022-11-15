@@ -121,7 +121,7 @@ const banner = () => {
           className="line md:max-w-[750px] pb-24 md:pb-0 text-lg lg:text-2xl"
         >
           <span>
-            Marvik es una consultora de
+            Marvik es una consultora de{" "}
             <span className="font-biotifbold">
               diseño, marketing y tecnología.
             </span>{" "}

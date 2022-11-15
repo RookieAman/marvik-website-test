@@ -26,6 +26,10 @@ export default function Home() {
     <div className="font-biotif w-full overflow-x-hidden">
       <Head>
         <title>Marvik Website</title>
+        <meta
+          name="google-site-verification"
+          content="u2dwTdbfPb-ZSPEvicJT3OTZQxSd2KxZIH_K9j0Uod0"
+        />
       </Head>
 
       {loading ? (

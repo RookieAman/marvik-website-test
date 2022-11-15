@@ -81,15 +81,6 @@ export default function Work() {
               }}
               viewport={{ once: true }}
               className="font-biotifbold text-6xl md:text-9xl z-10 customCursor"
-              onMouseEnter={() => {
-                setrealfoodingImg("/assets/RealfoodingAnim.gif");
-              }}
-              onClick={() => {
-                setrealfoodingImg("/assets/RealfoodingAnim.gif");
-              }}
-              onMouseOut={() => {
-                setrealfoodingImg("/assets/RealfoodingStatic.jpg");
-              }}
             >
               Realfooding
             </motion.h2>
@@ -107,47 +98,26 @@ export default function Work() {
                 }}
                 whileHover={{ scale: 0.9 }}
                 viewport={{ once: true }}
-                onMouseEnter={() => {
-                  setrealfoodingImg("/assets/RealfoodingAnim.gif");
-                }}
-                onClick={() => {
-                  setrealfoodingImg("/assets/RealfoodingAnim.gif");
-                }}
-                onMouseOut={() => {
-                  setrealfoodingImg("/assets/RealfoodingStatic.jpg");
-                }}
               >
                 <div className="2xl:min-h-[1200px]">
-                  {realfoodingImg == "/assets/RealfoodingAnim.gif" && (
-                    <video
-                      onMouseEnter={() => {
-                        setrealfoodingImg("/assets/RealfoodingAnim.gif");
-                      }}
-                      onClick={() => {
-                        setrealfoodingImg("/assets/RealfoodingAnim.gif");
-                      }}
-                      autoPlay
-                      loop
-                      muted
-                      className="videoDisplay rounded-[30px]"
-                      src="/assets/RealfoodingVideo.mp4"
-                    ></video>
-                  )}
-                  {realfoodingImg == "/assets/RealfoodingStatic.jpg" && (
-                    <div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 2 }}
-                    >
-                      <Image
-                        src={"/assets/RealfoodingStatic.jpg"}
-                        alt="user profile picture"
-                        width={1800}
-                        height={1200}
-                      />
-                    </div>
-                  )}
+                  <video
+                    autoPlay={true}
+                    loop
+                    muted
+                    className="videoDisplay rounded-[30px] md:absolute"
+                    src="/assets/RealfoodingVideo.mp4"
+                  ></video>
+                  <motion.div
+                    className="hidden md:block"
+                    whileHover={{ opacity: 0 }}
+                  >
+                    <Image
+                      src={"/assets/RealfoodingStatic.jpg"}
+                      alt="user profile picture"
+                      width={1800}
+                      height={1200}
+                    />
+                  </motion.div>
                 </div>
               </motion.div>
             </div>
@@ -267,15 +237,6 @@ export default function Work() {
             }}
             viewport={{ once: true }}
             className="font-biotifbold text-6xl md:text-9xl z-10 lg:ml-[400px] customCursor"
-            onMouseEnter={() => {
-              setShukranImg("/assets/ShukranAnim.gif");
-            }}
-            onClick={() => {
-              setShukranImg("/assets/ShukranAnim.gif");
-            }}
-            onMouseOut={() => {
-              setShukranImg("/assets/ShukranStatic.jpg");
-            }}
           >
             Shukran
           </motion.h2>
@@ -293,33 +254,19 @@ export default function Work() {
             whileHover={{ scale: 0.9 }}
             viewport={{ once: true }}
             className="sm:max-w-[400px] xl:max-w-[800px] sm:self-center customCursor"
-            onMouseEnter={() => {
-              setShukranImg("/assets/ShukranAnim.gif");
-            }}
-            onClick={() => {
-              setShukranImg("/assets/ShukranAnim.gif");
-            }}
-            onMouseOut={() => {
-              setShukranImg("/assets/ShukranStatic.jpg");
-            }}
           >
             <div className="xl:min-h-[1100px] xl:min-w-[800px]">
-              {shukranImg == "/assets/ShukranAnim.gif" && (
-                <video
-                  onMouseEnter={() => {
-                    setShukranImg("/assets/ShukranAnim.gif");
-                  }}
-                  onClick={() => {
-                    setShukranImg("/assets/ShukranAnim.gif");
-                  }}
-                  autoPlay
-                  loop
-                  muted
-                  className="videoDisplay rounded-[30px]"
-                  src="/assets/ShukranAnim.mp4"
-                ></video>
-              )}
-              {shukranImg == "/assets/ShukranStatic.jpg" && (
+              <video
+                autoPlay
+                loop
+                muted
+                className="videoDisplay rounded-[30px] md:absolute"
+                src="/assets/ShukranAnim.mp4"
+              ></video>
+              <motion.div
+                className="hidden md:block"
+                whileHover={{ opacity: 0 }}
+              >
                 <Image
                   className="rounded-[30px]"
                   src={shukranImg}
@@ -327,7 +274,7 @@ export default function Work() {
                   width={800}
                   height={1100}
                 />
-              )}
+              </motion.div>
             </div>
           </motion.div>
           <motion.div
@@ -375,15 +322,6 @@ export default function Work() {
             }}
             viewport={{ once: true }}
             className="font-biotifbold text-6xl md:text-9xl z-10 mb-[100px] customCursor"
-            onMouseEnter={() => {
-              setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
-            }}
-            onClick={() => {
-              setrealfoodingImg("/assets/MyrealfoodAPPAnim.gif");
-            }}
-            onMouseOut={() => {
-              setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
-            }}
           >
             myrealfood
           </motion.h2>
@@ -412,36 +350,22 @@ export default function Work() {
                 stiffness: 200,
                 damping: 10,
               }}
-              whileHover={{ scale: 0.9 }}
+              whileHover={{ scale: 0.95 }}
               viewport={{ once: true }}
               className="mt-10 mb-6 md:my-0 max-w-[370px] sm:max-w-[400px] xl:max-w-[700px] 2xl:max-w-[800px] sm:self-center mx-5 sm:mx-[2vw] customCursor"
-              onMouseEnter={() => {
-                setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
-              }}
-              onClick={() => {
-                setrealfoodingImg("/assets/MyrealfoodAPPAnim.gif");
-              }}
-              onMouseOut={() => {
-                setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
-              }}
             >
               <div className="xl:min-h-[1100px] xl:min-w-[800px]">
-                {myrealfoodImg == "/assets/MyrealfoodAPPAnim.gif" && (
-                  <video
-                    onMouseEnter={() => {
-                      setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
-                    }}
-                    onClick={() => {
-                      setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
-                    }}
-                    autoPlay
-                    loop
-                    muted
-                    className="videoDisplay rounded-[30px]"
-                    src="/assets/MyrealfoodAPPAnim.mp4"
-                  ></video>
-                )}
-                {myrealfoodImg == "/assets/MyrealfoodAPPStatic.jpg" && (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="videoDisplay rounded-[30px] md:absolute"
+                  src="/assets/MyrealfoodAPPAnim.mp4"
+                ></video>
+                <motion.div
+                  className="hidden md:block"
+                  whileHover={{ opacity: 0 }}
+                >
                   <Image
                     className="rounded-[30px]"
                     src="/assets/MyrealfoodAPPStatic.jpg"
@@ -449,7 +373,7 @@ export default function Work() {
                     width={800}
                     height={1100}
                   />
-                )}
+                </motion.div>
               </div>
             </motion.div>
           </div>
