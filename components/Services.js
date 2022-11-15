@@ -14,7 +14,7 @@ export default function Services() {
         viewport={{ once: true }}
         className="uppercase text-6xl md:text-[15vw] text-biotiflight"
       >
-        Services
+        Servicios
       </motion.h1>
       <motion.div
         initial={{ x: -200, opacity: 0 }}
@@ -35,10 +35,12 @@ export default function Services() {
           viewport={{ once: true }}
           className="line md:max-w-[750px] md:pb-0 text-lg lg:text-2xl"
         >
-          We build brands and elevate companies to the status of game changers.
-          We don’t settle until we create a better tomorrow for your company,
-          your clients, and our society, sometimes breaking a few boundaries
-          along the way.
+          Marvik es una combinación entre agencia creativa, empresa tecnológica
+          y venture builder. Sabemos lo que se necesita para crear marcas y
+          productos desde cero y lanzarlos con éxito al mercado. Nos movemos a
+          la velocidad de la cultura y la tecnología, y ayudamos a nuestros
+          clientes a conseguir sus objetivos a través del data analysis,
+          estrategias innovadoras y un diseño rompedor.
         </motion.span>
       </div>
 
@@ -74,26 +76,65 @@ export default function Services() {
 const accordionIds = [
   {
     id: 0,
-    title: "Business",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
+    title: "Product Design & Strategy",
+    desc: {
+      1: "- Diseño UX / UI (web & app)",
+      2: "- UX Research",
+      3: "- User testing",
+      4: "- Optimización contínua",
+      5: "- Estrategía de lanzamiento y crecimiento",
+    },
+    img: "/assets/Branding.jpg",
   },
   {
     id: 1,
-    title: "Branding",
-    desc: "Vivamus fermentum semper et natoque curae facilisis",
-    img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
+    title: "Branding & packaging",
+    desc: {
+      1: "- Diseño de identidad de marca",
+      2: "- Packaging",
+      3: "- Estrategia y posicionamiento de marca",
+      4: "- Brand Storytelling",
+      5: "- Brand Innovation",
+      6: "- Estrategia y creación de contenidos",
+    },
+    img: "/assets/Desgin.jpg",
   },
   {
     id: 2,
-    title: "Design",
-    desc: "Nisi accumsan tempus mauris platea metus duis facilisis",
-    img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
+    title: "Tecnología",
+    desc: {
+      1: "- Desarrollo web",
+      2: "- Desarrollo apps iOS & Android",
+      3: "- E-commerce",
+      4: "- CRM",
+      5: "- CMS",
+      6: "- Big Data",
+      7: "- Arquitectura de soluciones",
+    },
+    img: "/assets/Marketing.jpg",
   },
   {
     id: 3,
-    title: "Design",
-    desc: "Nisi accumsan tempus mauris platea metus duis facilisis",
-    img: "https://dummyimage.com/800x1000/bf9bbf/ffffff",
+    title: "Marketing & Research",
+    desc: {
+      1: "- Performance marketing",
+      2: "- Inbound marketing",
+      3: "- Channel performance analytics",
+      4: "- Market intelligence",
+      5: "- Modelos y análisis de datos",
+    },
+    img: "/assets/Tech.jpg",
+  },
+  {
+    id: 4,
+    title: "Transformación digital",
+    desc: {
+      1: "- Estrategia digital",
+      2: "- Implementación metodologías Agile",
+      3: "- Modelos de negocio digitales",
+      4: "- Transformación de la experiencia de usuario",
+      5: "- Digitalización de las operaciones",
+    },
+    img: "/assets/Tech.jpg",
   },
 ];

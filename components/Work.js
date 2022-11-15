@@ -4,6 +4,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Work() {
+  const [realfoodingImg, setrealfoodingImg] = useState(
+    "/assets/RealfoodingStatic.jpg"
+  );
+  const [hrImg, setHrImg] = useState("");
+  const [shukranImg, setShukranImg] = useState(
+    "https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
+  );
+  const [myrealfoodImg, setmyrealfoodImg] = useState(
+    "/assets/MyrealfoodAPPStatic.jpg"
+  );
+
   const [scrollY, setScrollY] = useState(0);
   const logoText =
     "The future starts here. The future starts here. The future starts here. The future starts here.";
@@ -21,30 +32,17 @@ export default function Work() {
     };
   });
 
-  const viewVariants = {
-    hidden: (direction) => ({
-      x: direction == "left" ? -200 : 200,
-      opacity: 0,
-    }),
-    visible: (delay) => ({
-      x: 0,
-      opacity: 1,
-      transition: { delay: delay, duration: 1, ease: [0.17, 0.55, 0.55, 1] },
-    }),
-  };
-
   return (
     <>
       <div className="px-5 md:px-14 mt-[400px] xl:mt-[500px]">
         <motion.h1
-          variants={viewVariants}
-          initial="hidden"
-          animate="visible"
-          direction="left"
-          delay={0.5}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1, ease: [0.17, 0.55, 0.55, 1] }}
+          viewport={{ once: true }}
           className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
-          Work
+          Proyectos
         </motion.h1>
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -65,10 +63,12 @@ export default function Work() {
             viewport={{ once: true }}
             className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
           >
-            We build brands and elevate companies to the status of game
-            changers. We don’t settle until we create a better tomorrow for your
-            company, your clients, and our society, sometimes breaking a few
-            boundaries along the way.
+            Nuestra pasión por la innovación y la búsqueda de la experiencia de
+            usuario perfecta nos ha llevado a diseñar una aplicación de
+            nutrición que ha batido récords. Y a transformar un movimiento de
+            redes sociales en una de las marcas de alimentación con más impacto
+            del momento. Y a construir una innovadora plataforma de colaboración
+            B2B. ¿Listo para crear juntos?
           </motion.span>
         </div>
         <div className="w-full mb-[200px] sm:mb-[500px]">
@@ -82,24 +82,39 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="font-biotifbold text-6xl md:text-9xl z-10"
+              className="font-biotifbold text-6xl md:text-9xl z-10 customCursor"
+              onMouseEnter={() => {
+                setrealfoodingImg("/assets/RealfoodingAnim.gif");
+              }}
+              onMouseOut={() => {
+                setrealfoodingImg("/assets/RealfoodingStatic.jpg");
+              }}
             >
               Realfooding
             </motion.h2>
           </div>
           <div className="flex justify-center mb-16 sm:pl-[10vw] -z-10">
             <motion.div
+              className="customCursor"
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
-                delay: 0.5,
-                duration: 1,
                 ease: [0.17, 0.55, 0.55, 1],
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
               }}
+              whileHover={{ scale: 0.9 }}
               viewport={{ once: true }}
+              onMouseEnter={() => {
+                setrealfoodingImg("/assets/RealfoodingAnim.gif");
+              }}
+              onMouseOut={() => {
+                setrealfoodingImg("/assets/RealfoodingStatic.jpg");
+              }}
             >
               <Image
-                src="https://dummyimage.com/1800x1200/aba2ab/917e91.jpg"
+                src={realfoodingImg}
                 alt="user profile picture"
                 width={1800}
                 height={1200}
@@ -119,22 +134,22 @@ export default function Work() {
               className="line"
             >
               <h3 className="max-w-[400px] text-2xl font-biotifbold mb-6">
-                How we transformed a social media movement into a leading food
-                brand
+                Transformación de un movimiento de alimentación saludable en una
+                de las marcas de F&B de mayor impacto.
               </h3>
               <ul className="list-none text-gray-400 text-xl">
                 <li>branding</li>
-                <li>strategy</li>
-                <li>content</li>
                 <li>packaging</li>
-                <li>ux/ui design</li>
-                <li>busieness transformation</li>
+                <li>market research</li>
+                <li>ux / ui design</li>
+                <li>desarrollo tecnológico</li>
+                <li>estrategia de contenido</li>
+                <li>transformación estratégica</li>
               </ul>
             </motion.div>
 
-            <div className="line text-right self-end text-xl sm:text-[3.5vw] sm:tracking-[.05vw] sm:leading-[3.2vw] text-gray-300">
-              social movement, <br />
-              leading brand.
+            <div className="line text-right self-end text-xl sm:text-[3.5vw] sm:tracking-[.05vw] sm:leading-[3.2vw] text-gray-300 max-w-[950px]">
+              cambiando la industria de la alimentación
             </div>
           </div>
         </div>
@@ -170,16 +185,16 @@ export default function Work() {
                 className="sm:ml-12"
               >
                 <h3 className="text-white max-w-[450px] text-2xl font-biotifbold mb-6">
-                  How we transformed a social media movement into a leading food
-                  brand
+                  Product design y desarrollo tecnológico de una plataforma
+                  innovadora de colaboración entre empresas basada en retos. Un
+                  proyecto realizado para la Cámara de Comercio.
                 </h3>
                 <ul className="list-none text-gray-400 text-xl mb-16">
+                  <li>desarrollo tecnológico</li>
+                  <li>ux / ui design</li>
                   <li>branding</li>
-                  <li>strategy</li>
-                  <li>content</li>
-                  <li>packaging</li>
-                  <li>ux/ui design</li>
-                  <li>busieness transformation</li>
+                  <li>market research</li>
+                  <li>estrategia go-to-market</li>
                 </ul>
 
                 {/* <div className="line">
@@ -194,8 +209,8 @@ export default function Work() {
             </div>
 
             <div className="line self-end text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
-              collaborative <br />
-              innovation
+              innovación. <br />
+              colaboración.
             </div>
           </div>
         </div>
@@ -213,7 +228,7 @@ export default function Work() {
               ease: [0.17, 0.55, 0.55, 1],
             }}
             viewport={{ once: true }}
-            className="font-biotifbold text-6xl md:text-9xl z-10"
+            className="font-biotifbold text-6xl md:text-9xl z-10 lg:ml-[400px]"
           >
             Shukran
           </motion.h2>
@@ -231,7 +246,7 @@ export default function Work() {
             className="sm:max-w-[400px] xl:max-w-[800px] sm:self-center"
           >
             <Image
-              src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
+              src={shukranImg}
               alt="Shukran Project"
               width={800}
               height={1100}
@@ -249,23 +264,23 @@ export default function Work() {
             className="line sm:ml-[10vw]"
           >
             <h3 className="max-w-[380px] text-2xl font-biotifbold mb-6 mt-20">
-              How we transformed a social media movement into a leading food
-              brand
+              Rebranding, estrategia de contenidos y posicionamiento de la marca
+              como uno de los líderes de la industria foodtech española.
             </h3>
             <ul className="list-none text-gray-400 text-xl mb-16">
               <li>branding</li>
-              <li>strategy</li>
-              <li>content</li>
               <li>packaging</li>
-              <li>ux/ui design</li>
-              <li>busieness transformation</li>
+              <li>desarrollo tecnológico</li>
+              <li>ux / ui design</li>
+              <li>estrategia de contenido</li>
+              <li>campañas de marketing digital</li>
             </ul>
           </motion.div>
 
-          <div className="line self-end text-3xl leading-6 sm:text-[5.5vw] sm:tracking-[.05vw] sm:leading-[4.5vw] text-gray-300">
-            food <br />
-            of the <br />
-            future
+          <div className="line text-right self-end text-3xl leading-6 sm:text-[5.5vw] sm:tracking-[.05vw] sm:leading-[4.5vw] text-gray-300 lg:absolute lg:right-10">
+            foodtech for <br />
+            the future
+            <br />
           </div>
         </div>
       </div>
@@ -281,7 +296,13 @@ export default function Work() {
               ease: [0.17, 0.55, 0.55, 1],
             }}
             viewport={{ once: true }}
-            className="font-biotifbold text-6xl md:text-9xl z-10 mb-[100px]"
+            className="font-biotifbold text-6xl md:text-9xl z-10 mb-[100px] customCursor"
+            onMouseEnter={() => {
+              setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
+            }}
+            onMouseOut={() => {
+              setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
+            }}
           >
             myrealfood
           </motion.h2>
@@ -310,10 +331,16 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="mt-10 mb-6 md:my-0 max-w-[370px] sm:max-w-[400px] xl:max-w-[700px] 2xl:max-w-[800px] sm:self-center mx-5 sm:mx-[2vw]"
+              className="mt-10 mb-6 md:my-0 max-w-[370px] sm:max-w-[400px] xl:max-w-[700px] 2xl:max-w-[800px] sm:self-center mx-5 sm:mx-[2vw] customCursor"
+              onMouseEnter={() => {
+                setmyrealfoodImg("/assets/MyrealfoodAPPAnim.gif");
+              }}
+              onMouseOut={() => {
+                setmyrealfoodImg("/assets/MyrealfoodAPPStatic.jpg");
+              }}
             >
               <Image
-                src="https://dummyimage.com/800x1100/aba2ab/917e91.jpg"
+                src={myrealfoodImg}
                 alt="Shukran Project"
                 width={800}
                 height={1100}
@@ -347,15 +374,14 @@ export default function Work() {
               className="line px-5 md:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
               <h3 className="max-w-[570px] text-2xl font-biotifbold mb-6 mt-20">
-                Dominating the charts, motherfuckers
+                Diseño UX/UI de la app líder de escaneo de productos y de
+                recetas saludables. Diseño y estrategia de lanzamiento del Plan
+                Plus.
               </h3>
               <ul className="list-none text-gray-400 text-xl mb-16">
-                <li>branding</li>
-                <li>strategy</li>
-                <li>content</li>
-                <li>packaging</li>
                 <li>ux/ui design</li>
-                <li>busieness transformation</li>
+                <li>branding</li>
+                <li>estrategia go-to-market</li>
               </ul>
 
               {/* <div className="line">
@@ -393,7 +419,7 @@ export default function Work() {
         </div>
         <div>
           <a
-            href="#"
+            href="#marvikFooter"
             className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold uppercase"
           >
             <span>Contáctanos</span>

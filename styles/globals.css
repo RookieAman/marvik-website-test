@@ -17,6 +17,20 @@
   src: url("../public/fonts/biotif-bold.otf");
 }
 
+@layer components {
+  .formInput {
+    @apply outline-none w-full py-6 px-10 my-5 rounded-full border border-black text-black placeholder-gray-400 transition-all focus:border-[#6752ed] focus:text-[#6752ed];
+  }
+
+  .clientLogo {
+    @apply m-3 xl:m-12 max-h-[30px] xl:max-h-[100px] lg:w-auto;
+  }
+
+  .clientSvg {
+    @apply h-full w-full max-w-[90px] lg:max-w-none;
+  }
+}
+
 body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none;
@@ -31,6 +45,10 @@ html {
 
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
+}
+
+.customCursor {
+  cursor: url("/assets/cursorTest.png"), pointer;
 }
 
 /* html,

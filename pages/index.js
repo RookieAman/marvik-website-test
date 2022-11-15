@@ -7,6 +7,7 @@ import Work from "../components/Work";
 import Services from "../components/Services";
 import Clients from "../components/Clients";
 import Loader from "../components/Loader";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -36,7 +37,7 @@ export default function Home() {
           <Work />
           <Services />
           <Clients />
-          <div className="h-[1000px] bg-[#FFB32B]"></div>
+          <Footer />
         </>
       )}
     </div>

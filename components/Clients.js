@@ -1,5 +1,36 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+import AuchanLogo from "../public/svgs/Clients/auchanLogo.svg";
+import CambraLogo from "../public/svgs/Clients/cambraLogo.svg";
+import DanoneLogo from "../public/svgs/Clients/danoneLogo.svg";
+import EuropastryLogo from "../public/svgs/Clients/europastryLogo.svg";
+import HerLogo from "../public/svgs/Clients/herLogo.svg";
+import InterregLogo from "../public/svgs/Clients/iterregLogo.svg";
+import MeliLogo from "../public/svgs/Clients/meliLogo.svg";
+import MigasaLogo from "../public/svgs/Clients/migasaLogo.svg";
+import MunLogo from "../public/svgs/Clients/munLogo.svg";
+import MyrealfoodLogo from "../public/svgs/Clients/myrealfoodLogo.svg";
+import NeweLogo from "../public/svgs/Clients/neweLogo.svg";
+import RealfoodingLogo from "../public/svgs/Clients/realfoodingLogo.svg";
+import SandevidLogo from "../public/svgs/Clients/sandevidLogo.svg";
+import ShukranLogo from "../public/svgs/Clients/shukranLogo.svg";
+import TropsLogo from "../public/svgs/Clients/tropsLogo.svg";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0 },
+};
 
 export default function Clients() {
   return (
@@ -12,7 +43,7 @@ export default function Clients() {
           viewport={{ once: true }}
           className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
-          Clients
+          Clientes
         </motion.h1>
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -33,42 +64,67 @@ export default function Clients() {
             viewport={{ once: true }}
             className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
           >
-            We build brands and elevate companies to the status of game
-            changers. We don’t settle until we create a better tomorrow for your
-            company, your clients, and our society, sometimes breaking a few
-            boundaries along the way.
+            Trabajamos con todo tipo de clientes, desde grandes empresas hasta
+            startups disruptivas, para construir marcas y productos digitales de
+            gran impacto. Hemos ayudado a más de 50 empresas de distintos
+            sectores a transformar sus negocios y a mejorar su presencia en un
+            mundo digital cada vez más complejo.
           </motion.span>
         </div>
       </div>
-      <div className="w-full flex justify-center mb-[300px]">
-        <div className="flex max-w-[1900px] justify-around flex-wrap">
-          {clientList.map((client, i) => (
-            <div className="m-3 md:m-12 w-[100px] lg:w-auto" key={i}>
-              <Image
-                src="https://dummyimage.com/300x200/4d8f7b/fff"
-                alt={client}
-                width={300}
-                height={200}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex max-w-[1900px] justify-center flex-wrap mx-auto mb-[300px]"
+      >
+        <motion.div className="clientLogo" variants={item}>
+          <AuchanLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <CambraLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <DanoneLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <EuropastryLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <HerLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <InterregLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MeliLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MigasaLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MunLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MyrealfoodLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <NeweLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <RealfoodingLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <SandevidLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <ShukranLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <TropsLogo className="clientSvg" />
+        </motion.div>
+      </motion.div>
     </>
   );
 }
-
-const clientList = [
-  "orange",
-  "apple",
-  "watermelon",
-  "orange",
-  "apple",
-  "watermelon",
-  "orange",
-  "apple",
-  "watermelon",
-  "orange",
-  "apple",
-  "watermelon",
-];

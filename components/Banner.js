@@ -115,10 +115,15 @@ const banner = () => {
           className="line md:max-w-[750px] pb-24 md:pb-0 text-lg lg:text-2xl"
         >
           <span>
-            We build brands and elevate companies to the status of game
-            changers. We don’t settle until we create a better tomorrow for your
-            company, your clients, and our society, sometimes breaking a few
-            boundaries along the way.
+            Marvik es una consultora de
+            <span className="font-biotifbold">
+              diseño, marketing y tecnología.
+            </span>{" "}
+            Construimos marcas y convertimos a nuestros clientes en{" "}
+            <span className="font-biotifbold"> disruptores. </span> No nos
+            conformamos hasta que no creamos un futuro mejor para vuestra
+            empresa y vuestros clientes, a veces rompiendo algunas reglas por el
+            camino.
           </span>
         </motion.div>
       </div>
