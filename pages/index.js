@@ -10,7 +10,7 @@ import Loader from "../components/Loader";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loading

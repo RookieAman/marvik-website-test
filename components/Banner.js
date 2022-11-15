@@ -95,6 +95,7 @@ const banner = () => {
           <a
             href="https://drive.google.com/file/d/12DeVMSKjzJPAZsnGZa4BLdIuqawwxe5X/view?usp=sharing"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <motion.div
               initial={{ opacity: 0, y: 80 }}
