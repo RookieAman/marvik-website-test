@@ -72,7 +72,7 @@ const Header = () => {
             className="z-10 px-8 md:px-14 lg:px-24 py-8 fixed"
           >
             <a href="#">
-              <MarvikGlyph className="w-[12vw] md:w-[3vw] lg:w-[4vw]" />
+              <MarvikGlyph className="w-[12vw] md:w-[3vw] lg:w-[100px]" />
             </a>
           </motion.nav>
         )}
@@ -124,7 +124,7 @@ const Header = () => {
                 />
               </div>
 
-              <div className="mt-[10%] font-biotifbold ml-4 hidden md:block cursor-default text-xs lg:text-sm">
+              <div className="mt-[10%] font-biotifbold ml-2 hidden md:block cursor-default text-xs lg:text-sm">
                 <span>The future-shaping company</span>
               </div>
             </div>

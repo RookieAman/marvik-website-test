@@ -32,7 +32,7 @@ export default function Work() {
 
   return (
     <>
-      <div className="px-5 md:px-14 mt-[400px] xl:mt-[500px]">
+      <div className="px-5 md:px-14 2xl:mt-[500px]">
         <motion.h1
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

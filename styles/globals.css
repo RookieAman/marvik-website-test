@@ -102,9 +102,9 @@ body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.customCursor {
+/* .customCursor {
   cursor: url("/assets/cursorTest.png"), pointer;
-}
+} */
 
 /* html,
 body {

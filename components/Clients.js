@@ -80,49 +80,52 @@ export default function Clients() {
         className="flex max-w-[1900px] justify-center flex-wrap mx-auto mb-[300px]"
       >
         <motion.div className="clientLogo" variants={item}>
-          <AuchanLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <CambraLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <DanoneLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <EuropastryLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <HerLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <InterregLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <MeliLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <MigasaLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <MunLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <MyrealfoodLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <NeweLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
           <RealfoodingLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
           <SandevidLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
+          <DanoneLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <AuchanLogo className="clientSvg" />
+        </motion.div>
+
+        <motion.div className="clientLogo" variants={item}>
+          <MigasaLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
           <ShukranLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
+          <MyrealfoodLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <EuropastryLogo className="clientSvg" />
+        </motion.div>
+
+        <motion.div className="clientLogo" variants={item}>
+          <CambraLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <InterregLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
           <TropsLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <HerLogo className="clientSvg" />
+        </motion.div>
+
+        <motion.div className="clientLogo" variants={item}>
+          <NeweLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MunLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MeliLogo className="clientSvg" />
         </motion.div>
       </motion.div>
     </>

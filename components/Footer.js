@@ -20,8 +20,8 @@ const Footer = () => {
     >
       <div className="w-full flex justify-between flex-col">
         <div className="mt-[70px] xl:mt-0">
-          <MarvikHeaderLogo className="w-[30vw] md:w-[15vw] lg:w-[15vw] mb-[50px] xl:mb-[70px]" />
-          <div className="max-w-[370px] ml-0 xl:ml-20 text-xl">
+          <MarvikHeaderLogo className="w-[250px] md:w-[350px] mb-[50px] xl:mb-[70px]" />
+          <div className="max-w-[370px] ml-0 xl:ml-20 text-xl mb-[50px] xl:mb-0">
             <p>
               C/ Balmes, 7 <br /> Barcelona, España
             </p>
@@ -31,7 +31,17 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="ml-0 xl:ml-20">© Marvik 2022</div>
+        <div className="ml-0 xl:ml-20">
+          <ul className="mb-4">
+            <li className="pointer">
+              <span>Términos y Condiciones</span>
+            </li>
+            <li className="pointer">
+              <span>Política de Privacidad</span>
+            </li>
+          </ul>
+          <span className="font-biotifbold">© Marvik 2022</span>
+        </div>
       </div>
       <div className="h-full w-full">
         <h2 className="text-6xl font-biotifbold">
@@ -62,7 +72,7 @@ const Footer = () => {
           />
           <button
             type="submit"
-            className="w-[250px] h-[94px] rounded-full bg-[#791BF5] text-white text-2xl hover:bg-[#000] transition-all"
+            className="w-[200px] h-[64px] rounded-full bg-[#791BF5] text-white text-2xl hover:bg-[#000] transition-all"
           >
             ENVIAR {">"}
           </button>
