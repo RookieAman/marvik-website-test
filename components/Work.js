@@ -32,7 +32,7 @@ export default function Work() {
 
   return (
     <>
-      <div className="px-5 md:px-14 2xl:mt-[500px]">
+      <div className="px-5 md:px-14 2xl:mt-[600px]">
         <motion.h1
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -61,12 +61,14 @@ export default function Work() {
             viewport={{ once: true }}
             className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
           >
-            Nuestra pasión por la innovación y la búsqueda de la experiencia de
-            usuario perfecta nos ha llevado a diseñar una aplicación de
-            nutrición que ha batido récords. Y a transformar un movimiento de
-            redes sociales en una de las marcas de alimentación con más impacto
-            del momento. Y a construir una innovadora plataforma de colaboración
-            B2B. ¿Listo para crear juntos?
+            Nuestra pasión por la{" "}
+            <span className="font-biotifbold">innovación</span> y la búsqueda de
+            la <span className="font-biotifbold">experiencia de usuario</span>{" "}
+            perfecta nos ha llevado a diseñar una aplicación de nutrición que ha
+            batido récords. Y a transformar un movimiento de redes sociales en
+            una de las marcas de alimentación con más impacto del momento. Y a
+            construir una innovadora plataforma de colaboración B2B.{" "}
+            <span className="font-biotifbold">¿Listo para crear juntos?</span>
           </motion.span>
         </div>
         <div className="w-full mb-[200px] sm:mb-[500px]">

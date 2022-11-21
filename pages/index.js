@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Clients from "../components/Clients";
 import Loader from "../components/Loader";
 import Footer from "../components/Footer";
+import CookiePopup from "../components/CookiePopup";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -57,6 +58,7 @@ export default function Home() {
         <Loader setLoading={setLoading} />
       ) : (
         <>
+          <CookiePopup />
           <Header />
           <Banner />
           <Work />

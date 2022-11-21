@@ -56,7 +56,7 @@ const banner = () => {
           animate={{ color: "#000" }}
           className="relative md:text-[4.5vw] md:tracking-[.10vw] md:leading-[4.2vw] text-3xl tracking-tight font-biotiflight max-w-[430px] md:max-w-none"
         >
-          <div className="line">
+          <div className="line max-h-[110px]">
             <span className="row-title inline-block overflow-hidden">
               {["Empresa, futuro."].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">
@@ -65,7 +65,7 @@ const banner = () => {
               ))}
             </span>
           </div>
-          <div className="line">
+          <div className="line max-h-[110px]">
             <span className="row-title inline-block overflow-hidden">
               {["Futuro, empresa."].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">

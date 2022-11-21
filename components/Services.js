@@ -35,12 +35,15 @@ export default function Services() {
           viewport={{ once: true }}
           className="line md:max-w-[750px] md:pb-0 text-lg lg:text-2xl"
         >
-          Marvik es una combinación entre agencia creativa, empresa tecnológica
-          y venture builder. Sabemos lo que se necesita para crear marcas y
-          productos desde cero y lanzarlos con éxito al mercado. Nos movemos a
-          la velocidad de la cultura y la tecnología, y ayudamos a nuestros
-          clientes a conseguir sus objetivos a través del data analysis,
-          estrategias innovadoras y un diseño rompedor.
+          Marvik es una combinación entre{" "}
+          <span className="font-biotifbold">
+            agencia creativa, empresa tecnológica y venture builder.
+          </span>{" "}
+          Sabemos lo que se necesita para crear marcas y productos desde cero y
+          lanzarlos con éxito al mercado. Nos movemos a la velocidad de la
+          cultura y la tecnología, y ayudamos a nuestros clientes a conseguir
+          sus objetivos a través del data analysis, estrategias innovadoras y un
+          diseño rompedor.
         </motion.span>
       </div>
 
@@ -78,11 +81,11 @@ const accordionIds = [
     id: 0,
     title: "Product Design & Strategy",
     desc: {
-      1: "- Diseño UX / UI (web & app)",
-      2: "- UX Research",
-      3: "- User testing",
-      4: "- Optimización contínua",
-      5: "- Estrategía de lanzamiento y crecimiento",
+      1: "_ Diseño UX / UI (web & app)",
+      2: "_ UX Research",
+      3: "_ User testing",
+      4: "_ Optimización contínua",
+      5: "_ Estrategía de lanzamiento y crecimiento",
     },
     img: "/assets/Desgin.jpg",
   },
@@ -90,12 +93,12 @@ const accordionIds = [
     id: 1,
     title: "Branding & packaging",
     desc: {
-      1: "- Diseño de identidad de marca",
-      2: "- Packaging",
-      3: "- Estrategia y posicionamiento de marca",
-      4: "- Brand Storytelling",
-      5: "- Brand Innovation",
-      6: "- Estrategia y creación de contenidos",
+      1: "_ Diseño de identidad de marca",
+      2: "_ Packaging",
+      3: "_ Estrategia y posicionamiento de marca",
+      4: "_ Brand Storytelling",
+      5: "_ Brand Innovation",
+      6: "_ Estrategia y creación de contenidos",
     },
 
     img: "/assets/Branding.jpg",
@@ -104,13 +107,13 @@ const accordionIds = [
     id: 2,
     title: "Tecnología",
     desc: {
-      1: "- Desarrollo web",
-      2: "- Desarrollo apps iOS & Android",
-      3: "- E-commerce",
-      4: "- CRM",
-      5: "- CMS",
-      6: "- Big Data",
-      7: "- Arquitectura de soluciones",
+      1: "_ Desarrollo web",
+      2: "_ Desarrollo apps iOS & Android",
+      3: "_ E-commerce",
+      4: "_ CRM",
+      5: "_ CMS",
+      6: "_ Big Data",
+      7: "_ Arquitectura de soluciones",
     },
     img: "/assets/Tech.jpg",
   },
@@ -118,11 +121,11 @@ const accordionIds = [
     id: 3,
     title: "Marketing & Research",
     desc: {
-      1: "- Performance marketing",
-      2: "- Inbound marketing",
-      3: "- Channel performance analytics",
-      4: "- Market intelligence",
-      5: "- Modelos y análisis de datos",
+      1: "_ Performance marketing",
+      2: "_ Inbound marketing",
+      3: "_ Channel performance analytics",
+      4: "_ Market intelligence",
+      5: "_ Modelos y análisis de datos",
     },
     img: "/assets/Marketing.jpg",
   },

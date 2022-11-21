@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
 import MarvikHeaderLogo from "../public/svgs/marvikHeaderLogo.svg";
+import { useState } from "react";
 
 const Footer = () => {
+  const [sent, setSent] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -11,6 +14,7 @@ const Footer = () => {
   const onSubmit = (formData, e) => {
     window.location.href = `mailto:contact@marvik.digital?subject=Hola Marvik!&body=Hola Marvik! Somos ${formData.name}. ${formData.message} (${formData.email})`;
     e.target.reset();
+    setSent(true);
   };
 
   return (
@@ -20,26 +24,40 @@ const Footer = () => {
     >
       <div className="w-full flex justify-between flex-col">
         <div className="mt-[70px] xl:mt-0">
-          <MarvikHeaderLogo className="w-[250px] md:w-[350px] mb-[50px] xl:mb-[70px]" />
-          <div className="max-w-[370px] ml-0 xl:ml-20 text-xl mb-[50px] xl:mb-0">
+          <MarvikHeaderLogo className="w-[250px] xl:ml-20 mb-[50px] xl:mb-[70px]" />
+          <div className="max-w-[370px] ml-0 xl:ml-20 text-2xl mb-[50px] xl:mb-0">
             <p>
               C/ Balmes, 7 <br /> Barcelona, España
             </p>
-            <div className="w-full border-b-2 border-black my-5"></div>
+            <div className="w-full border-b-2 border-black my-8"></div>
             <p>
               650 California St., Floor 7 <br /> San Francisco, California
             </p>
           </div>
         </div>
         <div className="ml-0 xl:ml-20">
-          <ul className="mb-4">
-            <li className="pointer">
-              <span>Términos y Condiciones</span>
-            </li>
-            <li className="pointer">
-              <span>Política de Privacidad</span>
-            </li>
-          </ul>
+          <div className="mb-8">
+            <a
+              className="hover:text-[#791BF5] transition-all hover:underline"
+              href="#"
+            >
+              Aviso legal
+            </a>
+            <span className="mx-3">/</span>
+            <a
+              className="hover:text-[#791BF5] transition-all hover:underline"
+              href="#"
+            >
+              Política de privacidad
+            </a>
+            <span className="mx-3">/</span>
+            <a
+              className="hover:text-[#791BF5] transition-all hover:underline"
+              href="#"
+            >
+              Política de cookies
+            </a>
+          </div>
           <span className="font-biotifbold">© Marvik 2022</span>
         </div>
       </div>
@@ -47,7 +65,7 @@ const Footer = () => {
         <h2 className="text-6xl font-biotifbold">
           ¿Listo para construir tu futuro?
         </h2>
-        <div className="w-full border-b-2 border-black my-5"></div>
+        <div className="w-full border-b-2 border-black my-5 mb-[70px]"></div>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="text-xl max-w-[834px]"
@@ -77,6 +95,14 @@ const Footer = () => {
             ENVIAR {">"}
           </button>
         </form>
+        {sent && (
+          <div className="line mt-10">
+            <span className="text-xl text-[#791BF5]">
+              Su mensaje se ha enviado con éxito. Pronto nos pondremos en
+              contacto con vosotros.
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );

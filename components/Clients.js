@@ -65,10 +65,14 @@ export default function Clients() {
             className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
           >
             Trabajamos con todo tipo de clientes, desde grandes empresas hasta
-            startups disruptivas, para construir marcas y productos digitales de
-            gran impacto. Hemos ayudado a más de 50 empresas de distintos
-            sectores a transformar sus negocios y a mejorar su presencia en un
-            mundo digital cada vez más complejo.
+            startups disruptivas, para construir{" "}
+            <span className="font-biotifbold">
+              marcas y productos digitales
+            </span>{" "}
+            de <span className="font-biotifbold">gran impacto.</span> Hemos
+            ayudado a más de 50 empresas de distintos sectores a transformar sus
+            negocios y a mejorar su presencia en un mundo digital cada vez más
+            complejo.
           </motion.span>
         </div>
       </div>
