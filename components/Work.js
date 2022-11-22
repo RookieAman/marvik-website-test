@@ -32,7 +32,7 @@ export default function Work() {
 
   return (
     <>
-      <div className="px-5 md:px-14 2xl:mt-[600px]">
+      <div className="px-5 md:px-14">
         <motion.h1
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -106,10 +106,10 @@ export default function Work() {
                     autoPlay={true}
                     loop
                     muted
-                    className="videoDisplay rounded-[30px] md:absolute"
+                    className="rounded-[30px]"
                     src="/assets/RealfoodingVideo.mp4"
                   ></video>
-                  <motion.div
+                  {/* <motion.div
                     className="hidden md:block"
                     whileHover={{ opacity: 0 }}
                   >
@@ -119,7 +119,7 @@ export default function Work() {
                       width={1800}
                       height={1200}
                     />
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </motion.div>
             </div>
@@ -136,7 +136,7 @@ export default function Work() {
               viewport={{ once: true }}
               className="line"
             >
-              <h3 className="max-w-[400px] text-2xl font-biotifbold mb-6">
+              <h3 className="md:max-w-[400px] text-2xl font-biotifbold mb-6">
                 Transformación de un movimiento de alimentación saludable en una
                 de las marcas de F&B de mayor impacto.
               </h3>
@@ -177,7 +177,7 @@ export default function Work() {
                 ease: [0.17, 0.55, 0.55, 1],
               }}
               viewport={{ once: true }}
-              className="font-biotifbold text-6xl md:text-9xl text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12 z-10"
+              className="font-biotifbold text-5xl md:text-9xl text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12 z-10 mix-blend-difference"
             >
               Hub &<br /> Rock
             </motion.h2>
@@ -193,7 +193,7 @@ export default function Work() {
               viewport={{ once: true }}
               className="sm:ml-12"
             >
-              <h3 className="text-white max-w-[450px] text-2xl font-biotifbold mb-6">
+              <h3 className="text-white max-w-[450px] text-xl font-biotifbold mb-6  mix-blend-difference">
                 Product design y desarrollo tecnológico de una plataforma
                 innovadora de colaboración entre empresas basada en retos. Un
                 proyecto realizado para la Cámara de Comercio.
@@ -251,10 +251,10 @@ export default function Work() {
                 autoPlay
                 loop
                 muted
-                className="videoDisplay rounded-[30px] md:absolute"
+                className="rounded-[30px]"
                 src="/assets/ShukranAnim.mp4"
               ></video>
-              <motion.div
+              {/* <motion.div
                 className="hidden md:block"
                 whileHover={{ opacity: 0 }}
               >
@@ -265,7 +265,7 @@ export default function Work() {
                   width={800}
                   height={1100}
                 />
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
           <motion.div
@@ -279,7 +279,7 @@ export default function Work() {
             viewport={{ once: true }}
             className="line sm:ml-[10vw]"
           >
-            <h3 className="max-w-[380px] text-2xl font-biotifbold mb-6 mt-20">
+            <h3 className="md:max-w-[380px] text-2xl font-biotifbold mb-6 mt-20">
               Rebranding, estrategia de contenidos y posicionamiento de la marca
               como uno de los líderes de la industria foodtech española.
             </h3>
@@ -350,10 +350,10 @@ export default function Work() {
                   autoPlay
                   loop
                   muted
-                  className="videoDisplay rounded-[30px] md:absolute"
+                  className="rounded-[30px]"
                   src="/assets/MyrealfoodAPPAnim.mp4"
                 ></video>
-                <motion.div
+                {/* <motion.div
                   className="hidden md:block"
                   whileHover={{ opacity: 0 }}
                 >
@@ -364,7 +364,7 @@ export default function Work() {
                     width={800}
                     height={1100}
                   />
-                </motion.div>
+                </motion.div> */}
               </div>
             </motion.div>
           </div>
