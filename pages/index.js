@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import CookiePopup from "../components/CookiePopup";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loading
