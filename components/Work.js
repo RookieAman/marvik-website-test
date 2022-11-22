@@ -158,70 +158,59 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full mb-[200px] sm:mb-[500px] bg-black/50 md:bg-black/10">
-        <div className="w-full min-h-[750px] md:h-[1320px] customCursor">
-          <video
-            className="w-full h-[750px] md:h-full object-cover -z-20 absolute"
-            src={hrImg}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5 z-10">
-            <div className="line md:mix-blend-difference">
-              <motion.h2
-                initial={{ x: -200, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.5,
-                  duration: 1,
-                  ease: [0.17, 0.55, 0.55, 1],
-                }}
-                viewport={{ once: true }}
-                className="font-biotifbold text-6xl md:text-9xl z-10 text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12"
-              >
-                Hub &<br /> Rock
-              </motion.h2>
+      <div className="w-full min-h-[750px] md:h-[1320px] mb-[500px] customCursor ">
+        <video
+          className="w-full h-[750px] md:h-full object-cover -z-20 absolute"
+          src={hrImg}
+          autoPlay
+          loop
+          muted
+        ></video>
+        <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5 z-10">
+          <div className="line md:mix-blend-difference">
+            <motion.h2
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="font-biotifbold text-6xl md:text-9xl text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12 z-10"
+            >
+              Hub &<br /> Rock
+            </motion.h2>
 
-              <motion.div
-                initial={{ x: -200, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  duration: 1,
-                  ease: [0.17, 0.55, 0.55, 1],
-                }}
-                viewport={{ once: true }}
-                className="sm:ml-12"
-              >
-                <h3 className="text-white max-w-[450px] text-2xl font-biotifbold mb-6">
-                  Product design y desarrollo tecnológico de una plataforma
-                  innovadora de colaboración entre empresas basada en retos. Un
-                  proyecto realizado para la Cámara de Comercio.
-                </h3>
-                <ul className="list-none text-gray-400 text-xl mb-16">
-                  <li>desarrollo tecnológico</li>
-                  <li>ux / ui design</li>
-                  <li>branding</li>
-                  <li>market research</li>
-                  <li>estrategia go-to-market</li>
-                </ul>
+            <motion.div
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.8,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="sm:ml-12"
+            >
+              <h3 className="text-white max-w-[450px] text-2xl font-biotifbold mb-6">
+                Product design y desarrollo tecnológico de una plataforma
+                innovadora de colaboración entre empresas basada en retos. Un
+                proyecto realizado para la Cámara de Comercio.
+              </h3>
+              <ul className="list-none text-gray-400 text-xl mb-16">
+                <li>desarrollo tecnológico</li>
+                <li>ux / ui design</li>
+                <li>branding</li>
+                <li>market research</li>
+                <li>estrategia go-to-market</li>
+              </ul>
+            </motion.div>
+          </div>
 
-                {/* <div className="line">
-                  <a
-                    href="#"
-                    className="text-xl sm:text-2xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold"
-                  >
-                    <span>SEE CASE STUDY</span>
-                  </a>
-                </div> */}
-              </motion.div>
-            </div>
-
-            <div className="line self-end text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
-              innovación. <br />
-              colaboración.
-            </div>
+          <div className="line self-end text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
+            innovación. <br />
+            colaboración.
           </div>
         </div>
       </div>
