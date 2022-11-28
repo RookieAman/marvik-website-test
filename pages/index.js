@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 import Head from "next/head";
 import Header from "../components/Header";
@@ -10,8 +11,12 @@ import Loader from "../components/Loader";
 import Footer from "../components/Footer";
 import CookiePopup from "../components/CookiePopup";
 
-export default function Home() {
-  const [loading, setLoading] = useState(true);
+export default function Home(props) {
+  const { locale } = useRouter();
+  console.log(props.marvik.services);
+  console.log(locale);
+
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     loading
@@ -26,7 +31,7 @@ export default function Home() {
   return (
     <div className="font-biotif w-full overflow-x-hidden">
       <Head>
-        <title>Marvik Website</title>
+        <title>Marvik - The future shaping company</title>
         <meta
           name="google-site-verification"
           content="u2dwTdbfPb-ZSPEvicJT3OTZQxSd2KxZIH_K9j0Uod0"
@@ -69,4 +74,14 @@ export default function Home() {
       )}
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  const response = await import(`../lang/${locale}.json`);
+
+  return {
+    props: {
+      marvik: response.default,
+    },
+  };
 }

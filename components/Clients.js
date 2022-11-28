@@ -14,6 +14,8 @@ import RealfoodingLogo from "../public/svgs/Clients/realfoodingLogo.svg";
 import SandevidLogo from "../public/svgs/Clients/sandevidLogo.svg";
 import ShukranLogo from "../public/svgs/Clients/shukranLogo.svg";
 import TropsLogo from "../public/svgs/Clients/tropsLogo.svg";
+import HochlandLogo from "../public/svgs/Clients/hochlandLogo.svg";
+import MinimalistTrainingLogo from "../public/svgs/Clients/minimalistTrainingLogo.svg";
 
 const container = {
   hidden: { opacity: 0 },
@@ -87,7 +89,7 @@ export default function Clients() {
           <RealfoodingLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
-          <SandevidLogo className="clientSvg" />
+          <HochlandLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
           <DanoneLogo className="clientSvg" />
@@ -130,6 +132,9 @@ export default function Clients() {
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
           <MeliLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MinimalistTrainingLogo className="clientSvg" />
         </motion.div>
       </motion.div>
     </>

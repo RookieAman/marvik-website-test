@@ -1,0 +1,99 @@
+{
+  "projects": {
+    "title": "projects",
+    "realfooding": {
+      "desc": "Transformación de un movimiento de alimentación saludable en una de las marcas de F&B de mayor impacto.",
+      "services": [
+        "branding",
+        "packaging",
+        "market research",
+        "ux / ui design",
+        "desarrollo tecnológico",
+        "estrategia de contenido",
+        "transformación estratégica"
+      ]
+    },
+    "hubrock": {
+      "desc": "Product design y desarrollo tecnológico de una plataforma innovadora de colaboración entre empresas basada en retos. Un proyecto realizado para la Cámara de Comercio.",
+      "services": [
+        "desarrollo tecnológico",
+        "ux / ui design",
+        "branding",
+        "market research",
+        "estrategia go-to-market"
+      ]
+    },
+    "shukran": {
+      "desc": "Rebranding, estrategia de contenidos y posicionamiento de la marca como uno de los líderes de la industria foodtech española.",
+      "services": [
+        "branding",
+        "packaging",
+        "desarrollo tecnológico",
+        "ux / ui design",
+        "estrategia de contenido",
+        "campañas de marketing digital"
+      ]
+    },
+    "myrealfood": {
+      "desc": "Diseño UX/UI de la app líder de escaneo de productos y de recetas saludables. Diseño y estrategia de lanzamiento del Plan Plus.",
+      "services": ["ux / ui design", "branding", "estrategia go-to-market"]
+    }
+  },
+
+  "services": {
+    "title": "Services",
+    "servicesList": [
+      {
+        "title": "Product Design & Strategy",
+        "features": [
+          "Diseño UX / UI (web & app)",
+          "UX Research",
+          "User testing",
+          "Optimización contínua",
+          "Estrategía de lanzamiento y crecimiento"
+        ]
+      },
+      {
+        "title": "Branding & packaging",
+        "features": [
+          "Diseño de identidad de marca",
+          "Packaging",
+          "Estrategia y posicionamiento de marca",
+          "Brand Storytelling",
+          "Brand Innovation",
+          "Estrategia y creación de contenidos"
+        ]
+      },
+      {
+        "title": "Tecnología",
+        "features": [
+          "Desarrollo web",
+          "Desarrollo apps iOS & Android",
+          "E-commerce",
+          "CRM",
+          "CMS",
+          "Big Data",
+          "Arquitectura de soluciones"
+        ]
+      },
+      {
+        "title": "Marketing & Research",
+        "features": [
+          "Performance marketing",
+          "Inbound marketing",
+          "Channel performance analytics",
+          "Market intelligence",
+          "Modelos y análisis de datos"
+        ]
+      }
+    ]
+  },
+
+  "clients": {
+    "title": "Clients"
+  },
+
+  "footer": {
+    "title": "¿Listo para construir tu futuro?"
+  }
+}

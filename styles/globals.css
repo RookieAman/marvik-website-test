@@ -33,6 +33,14 @@
   .videoDisplay {
     @apply right-0 bottom-0 w-full h-full -z-20 bg-cover overflow-hidden;
   }
+
+  .marvikColor {
+    @apply text-[#791BF5];
+  }
+
+  .infoTitle {
+    @apply mt-[90px] mb-4 uppercase text-[#791BF5] text-4xl font-biotifbold;
+  }
 }
 
 @keyframes flickerAnimation {

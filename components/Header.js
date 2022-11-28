@@ -2,13 +2,14 @@ import MarvikGlyph from "../public/svgs/marvikGlyph.svg";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const clsStyle = {
   fill: "none",
   stroke: "#6752ed",
   strokeLinecap: "round",
   strokeLinejoin: "round",
-  strokeWidth: 7,
+  strokeWidth: 5,
 };
 
 const svgVariant = {
@@ -46,6 +47,14 @@ const svgVariant2 = {
 };
 
 const Header = () => {
+  const router = useRouter();
+
+  const changeLang = () => {
+    router.push(router.pathname, router.pathname, {
+      locale: router.locale == "es" ? "en" : "es",
+    });
+  };
+
   const [small, setSmall] = useState(false);
 
   useEffect(() => {
@@ -71,7 +80,7 @@ const Header = () => {
             exit={{ opacity: 0, y: -80 }}
             className="z-10 px-8 md:px-14 lg:px-24 py-8 fixed"
           >
-            <a href="#">
+            <a href="/">
               <MarvikGlyph className="w-[12vw] md:w-[3vw] lg:w-[100px]" />
             </a>
           </motion.nav>
@@ -128,6 +137,13 @@ const Header = () => {
                 <span>The future-shaping company</span>
               </div>
             </div>
+
+            {/* <button
+              onClick={changeLang}
+              className="flex items-center absolute right-7 md:right-20 border-2 border-black px-3 rounded-[20px] hover:bg-black hover:text-white transition-all uppercase"
+            >
+              {router.locale == "en" ? "ES" : "EN"}
+            </button> */}
 
             {/* <MenuButton className="w-[10vw] md:w-[5vw] lg:w-[4vw]" /> */}
           </motion.nav>
