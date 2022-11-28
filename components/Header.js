@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const clsStyle = {
   fill: "none",
@@ -80,9 +81,9 @@ const Header = () => {
             exit={{ opacity: 0, y: -80 }}
             className="z-10 px-8 md:px-14 lg:px-24 py-8 fixed"
           >
-            <a href="/">
+            <Link href="/">
               <MarvikGlyph className="w-[12vw] md:w-[3vw] lg:w-[100px]" />
-            </a>
+            </Link>
           </motion.nav>
         )}
       </AnimatePresence>
@@ -125,14 +126,14 @@ const Header = () => {
               </svg>
 
               <div className="inline-block w-[130px] md:w-[7vw] lg:w-[7vw]">
-                <a href={"/"}>
+                <Link href={"/"}>
                   <Image
                     width={200}
                     height={59}
                     src="/svgs/marvikText.png"
                     alt="Logo text"
                   />
-                </a>
+                </Link>
               </div>
 
               <div className="mt-[10%] font-biotifbold ml-2 hidden md:block cursor-default text-xs lg:text-sm">
