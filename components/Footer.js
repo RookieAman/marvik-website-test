@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import MarvikHeaderLogo from "../public/svgs/marvikHeaderLogo.svg";
 import { useState } from "react";
+import Link from "next/link";
 
 const Footer = (props) => {
   const [sent, setSent] = useState(false);
@@ -37,26 +38,26 @@ const Footer = (props) => {
         </div>
         <div className="ml-0 xl:ml-20">
           <div className="mb-8">
-            <a
+            <Link
               className="hover:text-[#791BF5] transition-all hover:underline"
               href="/avisolegal"
             >
               {props.lang == "es" ? "Aviso legal" : "Legal terms"}
-            </a>
+            </Link>
             <span className="mx-3">/</span>
-            <a
+            <Link
               className="hover:text-[#791BF5] transition-all hover:underline"
               href="/politicaprivacidad"
             >
               {props.lang == "es" ? "Política de privacidad" : "Privacy policy"}
-            </a>
+            </Link>
             <span className="mx-3">/</span>
-            <a
+            <Link
               className="hover:text-[#791BF5] transition-all hover:underline"
               href="/politicacookies"
             >
               {props.lang == "es" ? "Política de cookies" : "Cookie policy"}
-            </a>
+            </Link>
           </div>
           <span className="font-biotifbold">© Marvik 2022</span>
         </div>

@@ -158,8 +158,8 @@ const banner = (locale) => {
               </span>{" "}
               consulting. We build innovative brands & products and turn our
               clients into{" "}
-              <span className="font-biotifbold"> disruptors. </span> We don't
-              settle until we create a better future for your company and your
+              <span className="font-biotifbold"> disruptors. </span> We don{"'"}
+              t settle until we create a better future for your company and your
               customers, sometimes breaking a few rules along the way.
             </span>
           )}
