@@ -125,12 +125,14 @@ const Header = () => {
               </svg>
 
               <div className="inline-block w-[130px] md:w-[7vw] lg:w-[7vw]">
-                <Image
-                  width={200}
-                  height={59}
-                  src="/svgs/marvikText.png"
-                  alt="Logo text"
-                />
+                <a href={"/"}>
+                  <Image
+                    width={200}
+                    height={59}
+                    src="/svgs/marvikText.png"
+                    alt="Logo text"
+                  />
+                </a>
               </div>
 
               <div className="mt-[10%] font-biotifbold ml-2 hidden md:block cursor-default text-xs lg:text-sm">
@@ -138,12 +140,12 @@ const Header = () => {
               </div>
             </div>
 
-            {/* <button
+            <button
               onClick={changeLang}
               className="flex items-center absolute right-7 md:right-20 border-2 border-black px-3 rounded-[20px] hover:bg-black hover:text-white transition-all uppercase"
             >
               {router.locale == "en" ? "ES" : "EN"}
-            </button> */}
+            </button>
 
             {/* <MenuButton className="w-[10vw] md:w-[5vw] lg:w-[4vw]" /> */}
           </motion.nav>

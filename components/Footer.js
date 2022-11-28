@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import MarvikHeaderLogo from "../public/svgs/marvikHeaderLogo.svg";
 import { useState } from "react";
 
-const Footer = () => {
+const Footer = (props) => {
   const [sent, setSent] = useState(false);
 
   const {
@@ -39,23 +39,23 @@ const Footer = () => {
           <div className="mb-8">
             <a
               className="hover:text-[#791BF5] transition-all hover:underline"
-              href="#"
+              href="/avisolegal"
             >
-              Aviso legal
+              {props.lang == "es" ? "Aviso legal" : "Legal terms"}
             </a>
             <span className="mx-3">/</span>
             <a
               className="hover:text-[#791BF5] transition-all hover:underline"
-              href="#"
+              href="/politicaprivacidad"
             >
-              Política de privacidad
+              {props.lang == "es" ? "Política de privacidad" : "Privacy policy"}
             </a>
             <span className="mx-3">/</span>
             <a
               className="hover:text-[#791BF5] transition-all hover:underline"
-              href="#"
+              href="/politicacookies"
             >
-              Política de cookies
+              {props.lang == "es" ? "Política de cookies" : "Cookie policy"}
             </a>
           </div>
           <span className="font-biotifbold">© Marvik 2022</span>
@@ -63,7 +63,9 @@ const Footer = () => {
       </div>
       <div className="h-full w-full">
         <h2 className="text-6xl font-biotifbold">
-          ¿Listo para construir tu futuro?
+          {props.lang == "es"
+            ? "¿Listo para construir tu futuro?"
+            : "Are you ready to build your future?"}
         </h2>
         <div className="w-full border-b-2 border-black my-5 mb-[70px]"></div>
         <form
@@ -72,7 +74,7 @@ const Footer = () => {
         >
           <input
             {...register("name")}
-            placeholder="Nombre empresa"
+            placeholder={props.lang == "es" ? "Nombre empresa" : "Company name"}
             className="formInput"
             type="text"
           />
@@ -84,7 +86,7 @@ const Footer = () => {
           />
           <textarea
             {...register("message")}
-            placeholder="Mensaje"
+            placeholder={props.lang == "es" ? "Mensaje" : "Message"}
             rows={10}
             className="outline-none w-full py-6 px-10 my-5 rounded-[60px] border border-black text-black placeholder-gray-400 transition-all focus:border-[#6752ed] focus:text-[#6752ed]"
           />
@@ -92,14 +94,15 @@ const Footer = () => {
             type="submit"
             className="w-[200px] h-[64px] rounded-full bg-[#791BF5] text-white text-2xl hover:bg-[#000] transition-all"
           >
-            ENVIAR {">"}
+            {props.lang == "es" ? "ENVIAR" : "SEND"} {">"}
           </button>
         </form>
         {sent && (
           <div className="line mt-10">
             <span className="text-xl text-[#791BF5]">
-              Su mensaje se ha enviado con éxito. Pronto nos pondremos en
-              contacto con vosotros.
+              {props.lang == "es"
+                ? "Su mensaje se ha enviado con éxito. Pronto nos pondremos en contacto con vosotros."
+                : "Your message has been sent successfully. We will soon get in contact with you."}
             </span>
           </div>
         )}

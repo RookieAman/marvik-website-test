@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const banner = () => {
+const banner = (locale) => {
+  const currentLang = locale.lang;
+
   const bannerVar = {
     animate: (i) => ({
       transition: {
@@ -58,7 +60,11 @@ const banner = () => {
         >
           <div className="line max-h-[110px]">
             <span className="row-title inline-block overflow-hidden">
-              {["Empresa, futuro."].map((letter, i) => (
+              {[
+                currentLang == "es"
+                  ? "Empresa, futuro."
+                  : "Brand, meet future.",
+              ].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">
                   {letter}
                 </span>
@@ -67,7 +73,11 @@ const banner = () => {
           </div>
           <div className="line max-h-[110px]">
             <span className="row-title inline-block overflow-hidden">
-              {["Futuro, empresa."].map((letter, i) => (
+              {[
+                currentLang == "es"
+                  ? "Futuro, empresa."
+                  : "Future, meet brand.",
+              ].map((letter, i) => (
                 <span key={i} className="inline-block row-letter">
                   {letter}
                 </span>
@@ -77,7 +87,11 @@ const banner = () => {
           <div className="line font-biotifbold text-[28px] md:text-[4.5vw] break-normal inline-block">
             <AnimatedLetters
               customDelay={0.2}
-              title={`Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik`}
+              title={
+                currentLang == "es"
+                  ? `Una \u00A0 conexión \u00A0 hecha \u00A0 en \u00A0 Marvik`
+                  : `A \u00A0 match \u00A0 made \u00A0 in \u00A0 Marvik`
+              }
             />
           </div>
           {/* <div className="line font-biotifbold text-[29px] md:text-[4.5vw] block sm:hidden">
@@ -108,7 +122,7 @@ const banner = () => {
               className="flex justify-center items-center h-[350px] w-[250px] 2xl:h-[600px] 2xl:w-[400px] bg-black rounded-[220px] bg-[url('/assets/PresentationThumbnail.jpg')] bg-cover bg-center pointer"
             >
               <span className="text-3xl text-white animate-flicker">
-                Saber más
+                {currentLang == "es" ? "Saber más" : "About us"}
               </span>
             </motion.div>
           </a>
@@ -124,17 +138,31 @@ const banner = () => {
           }}
           className="line md:max-w-[750px] pb-24 md:pb-0 text-lg lg:text-2xl"
         >
-          <span>
-            Marvik es una consultora de{" "}
-            <span className="font-biotifbold">
-              diseño, marketing y tecnología.
-            </span>{" "}
-            Construimos marcas y convertimos a nuestros clientes en{" "}
-            <span className="font-biotifbold"> disruptores. </span> No nos
-            conformamos hasta que no creamos un futuro mejor para vuestra
-            empresa y vuestros clientes, a veces rompiendo algunas reglas por el
-            camino.
-          </span>
+          {currentLang == "es" ? (
+            <span>
+              Marvik es una consultora de{" "}
+              <span className="font-biotifbold">
+                diseño, marketing y tecnología.
+              </span>{" "}
+              Construimos marcas y convertimos a nuestros clientes en{" "}
+              <span className="font-biotifbold"> disruptores. </span> No nos
+              conformamos hasta que no creamos un futuro mejor para vuestra
+              empresa y vuestros clientes, a veces rompiendo algunas reglas por
+              el camino.
+            </span>
+          ) : (
+            <span>
+              Marvik is a{" "}
+              <span className="font-biotifbold">
+                design, marketing and technology
+              </span>{" "}
+              consulting. We build innovative brands & products and turn our
+              clients into{" "}
+              <span className="font-biotifbold"> disruptors. </span> We don't
+              settle until we create a better future for your company and your
+              customers, sometimes breaking a few rules along the way.
+            </span>
+          )}
         </motion.div>
       </div>
     </motion.section>

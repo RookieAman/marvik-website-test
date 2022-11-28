@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-export default function Work() {
+const Work = (props) => {
+  console.log(props);
   const [realfoodingImg, setrealfoodingImg] = useState(
     "/assets/RealfoodingStatic.jpg"
   );
@@ -40,7 +41,7 @@ export default function Work() {
           viewport={{ once: true }}
           className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
-          Proyectos
+          {props.langInfo.title}
         </motion.h1>
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -50,26 +51,53 @@ export default function Work() {
           className="line w-full border-b-2 border-black"
         ></motion.div>
         <div className="flex justify-end mt-8 mb-20 md:mb-60">
-          <motion.span
-            initial={{ x: 200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.8,
-              duration: 1,
-              ease: [0.17, 0.55, 0.55, 1],
-            }}
-            viewport={{ once: true }}
-            className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
-          >
-            Nuestra pasión por la{" "}
-            <span className="font-biotifbold">innovación</span> y la búsqueda de
-            la <span className="font-biotifbold">experiencia de usuario</span>{" "}
-            perfecta nos ha llevado a diseñar una aplicación de nutrición que ha
-            batido récords. Y a transformar un movimiento de redes sociales en
-            una de las marcas de alimentación con más impacto del momento. Y a
-            construir una innovadora plataforma de colaboración B2B.{" "}
-            <span className="font-biotifbold">¿Listo para crear juntos?</span>
-          </motion.span>
+          {props.lang == "es" ? (
+            <motion.span
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.8,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+            >
+              Nuestra pasión por la{" "}
+              <span className="font-biotifbold">innovación</span> y la búsqueda
+              de la{" "}
+              <span className="font-biotifbold">experiencia de usuario</span>{" "}
+              perfecta nos ha llevado a diseñar una aplicación de nutrición que
+              ha batido récords. Y a transformar un movimiento de redes sociales
+              en una de las marcas de alimentación con más impacto del momento.
+              Y a construir una innovadora plataforma de colaboración B2B.{" "}
+              <span className="font-biotifbold">¿Listo para crear juntos?</span>
+            </motion.span>
+          ) : (
+            <motion.span
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.8,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+            >
+              Our passion for{" "}
+              <span className="font-biotifbold">innovation</span> and the
+              constant search for{" "}
+              <span className="font-biotifbold">
+                the perfect user experience
+              </span>{" "}
+              has led us to design a record-breaking nutrition app. And to
+              transform a social media movement into one of the most impactful
+              food brands of the moment. And to build an innovative B2B
+              collaboration platform.
+              <span className="font-biotifbold">Ready to create together?</span>
+            </motion.span>
+          )}
         </div>
         <div className="w-full mb-[200px] sm:mb-[500px]">
           <div className="flex justify-center md:justify-start 2xl:pl-[15vw] -mb-6 md:-mb-12">
@@ -137,22 +165,35 @@ export default function Work() {
               className="line"
             >
               <h3 className="md:max-w-[400px] text-2xl font-biotifbold mb-6">
-                Transformación de un movimiento de alimentación saludable en una
-                de las marcas de F&B de mayor impacto.
+                {props.langInfo.myrealfood.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl">
                 <li>branding</li>
                 <li>packaging</li>
                 <li>market research</li>
                 <li>ux / ui design</li>
-                <li>desarrollo tecnológico</li>
-                <li>estrategia de contenido</li>
-                <li>transformación estratégica</li>
+                <li>
+                  {props.lang == "es"
+                    ? "desarrollo tecnológico"
+                    : "tech development"}
+                </li>
+                <li>
+                  {props.lang == "es"
+                    ? "estrategia de contenido"
+                    : "content strategy"}
+                </li>
+                <li>
+                  {props.lang == "es"
+                    ? "transformación estratégica"
+                    : "strategic transformation"}
+                </li>
               </ul>
             </motion.div>
 
             <div className="line text-right self-end text-xl sm:text-[3.5vw] sm:tracking-[.05vw] sm:leading-[3.2vw] text-gray-300 max-w-[950px]">
-              cambiando la industria de la alimentación
+              {props.lang == "es"
+                ? "cambiando la industria de la alimentación"
+                : "Revolutionizing the food industry"}
             </div>
           </div>
         </div>
@@ -194,23 +235,30 @@ export default function Work() {
               className="sm:ml-12"
             >
               <h3 className="text-white max-w-[450px] text-xl font-biotifbold mb-6  mix-blend-difference">
-                Product design y desarrollo tecnológico de una plataforma
-                innovadora de colaboración entre empresas basada en retos. Un
-                proyecto realizado para la Cámara de Comercio.
+                {props.langInfo.hubrock.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl mb-16">
-                <li>desarrollo tecnológico</li>
+                <li>
+                  {props.lang == "es"
+                    ? "desarrollo tecnológico"
+                    : "tech development"}
+                </li>
                 <li>ux / ui design</li>
                 <li>branding</li>
                 <li>market research</li>
-                <li>estrategia go-to-market</li>
+                <li>
+                  {props.lang == "es"
+                    ? "estrategia go-to-market"
+                    : "go-to market strategy"}
+                </li>
               </ul>
             </motion.div>
           </div>
 
           <div className="line self-end text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
-            innovación. <br />
-            colaboración.
+            {props.lang == "es" ? "innovación." : "innovation"}
+            <br />
+            {props.lang == "es" ? "colaboración." : "collaboration"}.
           </div>
         </div>
       </div>
@@ -280,16 +328,27 @@ export default function Work() {
             className="line sm:ml-[10vw]"
           >
             <h3 className="md:max-w-[380px] text-2xl font-biotifbold mb-6 mt-20">
-              Rebranding, estrategia de contenidos y posicionamiento de la marca
-              como uno de los líderes de la industria foodtech española.
+              {props.langInfo.shukran.desc}
             </h3>
             <ul className="list-none text-gray-400 text-xl mb-16">
               <li>branding</li>
               <li>packaging</li>
-              <li>desarrollo tecnológico</li>
+              <li>
+                {props.lang == "es"
+                  ? "desarrollo tecnológico"
+                  : "technological development"}
+              </li>
               <li>ux / ui design</li>
-              <li>estrategia de contenido</li>
-              <li>campañas de marketing digital</li>
+              <li>
+                {props.lang == "es"
+                  ? "estrategia de contenido"
+                  : "content strategy"}
+              </li>
+              <li>
+                {props.lang == "es"
+                  ? "campañas de marketing digital"
+                  : "digital marketing campaigns"}
+              </li>
             </ul>
           </motion.div>
 
@@ -395,14 +454,16 @@ export default function Work() {
               className="line px-5 md:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
               <h3 className="max-w-[570px] text-2xl font-biotifbold mb-6 mt-20">
-                Diseño UX/UI de la app líder de escaneo de productos y de
-                recetas saludables. Diseño y estrategia de lanzamiento del Plan
-                Plus.
+                {props.langInfo.realfooding.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl mb-16">
                 <li>ux/ui design</li>
                 <li>branding</li>
-                <li>estrategia go-to-market</li>
+                <li>
+                  {props.lang == "es"
+                    ? "estrategia go-to-market"
+                    : "go-to market strategy"}
+                </li>
               </ul>
             </motion.div>
           </div>
@@ -434,10 +495,12 @@ export default function Work() {
             href="#marvikFooter"
             className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold uppercase"
           >
-            <span>Contáctanos</span>
+            <span>{props.lang == "es" ? "Contáctanos" : "Contact us"}</span>
           </a>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default Work;

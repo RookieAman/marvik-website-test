@@ -13,10 +13,8 @@ import CookiePopup from "../components/CookiePopup";
 
 export default function Home(props) {
   const { locale } = useRouter();
-  console.log(props.marvik.services);
-  console.log(locale);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loading
@@ -60,16 +58,16 @@ export default function Home(props) {
       </Head>
 
       {loading ? (
-        <Loader setLoading={setLoading} />
+        <Loader lang={locale} setLoading={setLoading} />
       ) : (
         <>
           <CookiePopup />
           <Header />
-          <Banner />
-          <Work />
-          <Services />
-          <Clients />
-          <Footer />
+          <Banner lang={locale} />
+          <Work langInfo={props.marvik.projects} lang={locale} />
+          <Services langInfo={props.marvik.services} lang={locale} />
+          <Clients lang={locale} />
+          <Footer lang={locale} />
         </>
       )}
     </div>

@@ -1,6 +1,6 @@
 {
   "projects": {
-    "title": "projects",
+    "title": "proyectos",
     "realfooding": {
       "desc": "Transformación de un movimiento de alimentación saludable en una de las marcas de F&B de mayor impacto.",
       "services": [
@@ -41,59 +41,6 @@
   },
 
   "services": {
-    "title": "Services",
-    "servicesList": [
-      {
-        "title": "Product Design & Strategy",
-        "features": [
-          "Diseño UX / UI (web & app)",
-          "UX Research",
-          "User testing",
-          "Optimización contínua",
-          "Estrategía de lanzamiento y crecimiento"
-        ]
-      },
-      {
-        "title": "Branding & packaging",
-        "features": [
-          "Diseño de identidad de marca",
-          "Packaging",
-          "Estrategia y posicionamiento de marca",
-          "Brand Storytelling",
-          "Brand Innovation",
-          "Estrategia y creación de contenidos"
-        ]
-      },
-      {
-        "title": "Tecnología",
-        "features": [
-          "Desarrollo web",
-          "Desarrollo apps iOS & Android",
-          "E-commerce",
-          "CRM",
-          "CMS",
-          "Big Data",
-          "Arquitectura de soluciones"
-        ]
-      },
-      {
-        "title": "Marketing & Research",
-        "features": [
-          "Performance marketing",
-          "Inbound marketing",
-          "Channel performance analytics",
-          "Market intelligence",
-          "Modelos y análisis de datos"
-        ]
-      }
-    ]
-  },
-
-  "clients": {
-    "title": "Clients"
-  },
-
-  "footer": {
-    "title": "¿Listo para construir tu futuro?"
+    "title": "servicios"
   }
 }

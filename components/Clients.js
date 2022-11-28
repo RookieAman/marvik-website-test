@@ -34,7 +34,7 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
-export default function Clients() {
+const Clients = (props) => {
   return (
     <>
       <div className="px-5 md:px-14">
@@ -45,7 +45,7 @@ export default function Clients() {
           viewport={{ once: true }}
           className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
-          Clientes
+          {props.lang == "es" ? "Clientes" : "Clients"}
         </motion.h1>
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -55,27 +55,50 @@ export default function Clients() {
           className="line w-full border-b-2 border-black"
         ></motion.div>
         <div className="flex justify-end mt-8 mb-36 md:mb-60">
-          <motion.span
-            initial={{ x: 200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.8,
-              duration: 1,
-              ease: [0.17, 0.55, 0.55, 1],
-            }}
-            viewport={{ once: true }}
-            className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
-          >
-            Trabajamos con todo tipo de clientes, desde grandes empresas hasta
-            startups disruptivas, para construir{" "}
-            <span className="font-biotifbold">
-              marcas y productos digitales
-            </span>{" "}
-            de <span className="font-biotifbold">gran impacto.</span> Hemos
-            ayudado a más de 50 empresas de distintos sectores a transformar sus
-            negocios y a mejorar su presencia en un mundo digital cada vez más
-            complejo.
-          </motion.span>
+          {props.lang == "es" ? (
+            <motion.span
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.8,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+            >
+              Trabajamos con todo tipo de clientes, desde grandes empresas hasta
+              startups disruptivas, para construir{" "}
+              <span className="font-biotifbold">
+                marcas y productos digitales
+              </span>{" "}
+              de <span className="font-biotifbold">gran impacto.</span> Hemos
+              ayudado a más de 50 empresas de distintos sectores a transformar
+              sus negocios y a mejorar su presencia en un mundo digital cada vez
+              más complejo.
+            </motion.span>
+          ) : (
+            <motion.span
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.8,
+                duration: 1,
+                ease: [0.17, 0.55, 0.55, 1],
+              }}
+              viewport={{ once: true }}
+              className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
+            >
+              We work with all types of clients, from large enterprises to
+              disruptive startups, to build{" "}
+              <span className="font-biotifbold">
+                high-impact digital brands and products.
+              </span>{" "}
+              We have helped more than 50 companies from different sectors
+              transform their businesses and improve their presence in an
+              increasingly complex digital world.
+            </motion.span>
+          )}
         </div>
       </div>
       <motion.div
@@ -139,4 +162,6 @@ export default function Clients() {
       </motion.div>
     </>
   );
-}
+};
+
+export default Clients;
