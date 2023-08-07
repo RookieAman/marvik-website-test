@@ -8,8 +8,10 @@ const Service = (props) => {
         </div>
 
         <ul className="list-disc px-5 text-xl font-biotif cardMiddle">
-          {props.serviceList.map((service) => (
-            <li className="mb-3">{service}</li>
+          {props.serviceList.map((service, index) => (
+            <li key={index} className="mb-3">
+              {service}
+            </li>
           ))}
         </ul>
 
