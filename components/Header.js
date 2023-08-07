@@ -98,7 +98,7 @@ const Header = () => {
               duration: 0.5,
             }}
             exit={{ opacity: 0, y: -80 }}
-            className="flex justify-center items-center z-10 px-8 md:px-14 lg:px-24 py-8 w-full fixed"
+            className="flex justify-between md:justify-center items-center z-10 px-8 md:px-14 lg:px-24 py-8 w-full fixed"
           >
             <div className="flex justify-center items-center">
               {/* <MarvikHeaderLogo className="w-[30vw] md:w-[15vw] lg:w-[10vw]" /> */}
@@ -140,6 +140,15 @@ const Header = () => {
                 <span>The future-shaping company</span>
               </div>
             </div>
+
+            <button
+              onClick={(e) => {
+                window.open("/kitdigital", "_self");
+              }}
+              className="flex font-biotif mr-16 md:mr-0 text-2xl mt-2 items-center md:absolute md:right-[10rem] border-b-2 mb-2 border-[#791BF5] text-[#791BF5] hover:text-black hover:border-black transition-all uppercase"
+            >
+              KIT DIGITAL
+            </button>
 
             <button
               onClick={changeLang}
