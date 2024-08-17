@@ -16,10 +16,10 @@ import ShukranLogo from '../public/svgs/Clients/shukranLogo.svg'
 import TropsLogo from '../public/svgs/Clients/tropsLogo.svg'
 import HochlandLogo from '../public/svgs/Clients/hochlandLogo.svg'
 import MinimalistTrainingLogo from '../public/svgs/Clients/minimalistTrainingLogo.svg'
-import KingsLeagueLogo from '../public/svgs/Clients/KingsLeagueLogo.svg'
-import CarrefourLogo from '../public/svgs/Clients/CarrefourLogo.svg'
-import MorrisonsLogo from '../public/svgs/Clients/MorrisonsLogo.svg'
-import BucketsLogo from '../public/svgs/Clients/BucketsLogo.svg'
+import KingsLeagueLogo from '../public/svgs/Clients/kingsLeagueLogo.svg'
+import CarrefourLogo from '../public/svgs/Clients/carrefourLogo.svg'
+import MorrisonsLogo from '../public/svgs/Clients/morrisonsLogo.svg'
+import BucketsLogo from '../public/svgs/Clients/bucketsLogo.svg'
 
 const container = {
   hidden: { opacity: 0 },
