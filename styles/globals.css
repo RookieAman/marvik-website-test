@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Biotif";
-  src: url("../public/fonts/biotif-regular.otf");
+  font-family: 'Biotif';
+  src: url('../public/fonts/biotif-regular.otf');
 }
 
 @font-face {
-  font-family: "Biotif-Light";
-  src: url("../public/fonts/biotif-light.otf");
+  font-family: 'Biotif-Light';
+  src: url('../public/fonts/biotif-light.otf');
 }
 
 @font-face {
-  font-family: "Biotif-Bold";
-  src: url("../public/fonts/biotif-bold.otf");
+  font-family: 'Biotif-Bold';
+  src: url('../public/fonts/biotif-bold.otf');
 }
 
 @layer components {
@@ -23,7 +23,7 @@
   }
 
   .clientLogo {
-    @apply m-3 xl:m-12 max-h-[30px] xl:max-h-[100px] lg:w-auto;
+    @apply m-3 xl:m-12 max-h-[30px] xl:max-h-[100px] lg:w-auto w-[40%] md:w-auto flex md:block items-center justify-center;
   }
 
   .clientSvg {

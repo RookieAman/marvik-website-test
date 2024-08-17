@@ -2,7 +2,7 @@
   "projects": {
     "title": "projects",
     "realfooding": {
-      "desc": "Transforming a health movement into one of the most impactful F&B brands.",
+      "desc": "We transformed a health movement into one of the most impactful Food & Beverage brands, Realfooding. We launched more than 10 food products, with distribution in the largest national retail chains, and we were in charge of the entire process, from product ideation to packaging and business development.",
       "services": [
         "branding",
         "packaging",
@@ -14,7 +14,7 @@
       ]
     },
     "hubrock": {
-      "desc": "Product design and development of an innovative platform for collaboration between companies based on challenges. A project made  for the Chamber of Commerce.",
+      "desc": "Product design and IT development of an innovative platform aimed at fostering collaboration between established companies and startups through challenges. A project made for the Chamber of Commerce.",
       "services": [
         "desarrollo tecnológico",
         "ux / ui design",
@@ -35,7 +35,7 @@
       ]
     },
     "myrealfood": {
-      "desc": "UX/UI design of the leading product scanning and healthy recipes app, with more than 2 million monthly active users. Design and launch strategy for the paid plan.",
+      "desc": "Product design & management of one of the leading nutrition apps, with more than 2 million active users.",
       "services": ["ux / ui design", "branding", "estrategia go-to-market"]
     }
   },

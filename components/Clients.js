@@ -1,21 +1,25 @@
-import { motion } from "framer-motion";
-import AuchanLogo from "../public/svgs/Clients/auchanLogo.svg";
-import CambraLogo from "../public/svgs/Clients/cambraLogo.svg";
-import DanoneLogo from "../public/svgs/Clients/danoneLogo.svg";
-import EuropastryLogo from "../public/svgs/Clients/europastryLogo.svg";
-import HerLogo from "../public/svgs/Clients/herLogo.svg";
-import InterregLogo from "../public/svgs/Clients/iterregLogo.svg";
-import MeliLogo from "../public/svgs/Clients/meliLogo.svg";
-import MigasaLogo from "../public/svgs/Clients/migasaLogo.svg";
-import MunLogo from "../public/svgs/Clients/munLogo.svg";
-import MyrealfoodLogo from "../public/svgs/Clients/myrealfoodLogo.svg";
-import NeweLogo from "../public/svgs/Clients/neweLogo.svg";
-import RealfoodingLogo from "../public/svgs/Clients/realfoodingLogo.svg";
-import SandevidLogo from "../public/svgs/Clients/sandevidLogo.svg";
-import ShukranLogo from "../public/svgs/Clients/shukranLogo.svg";
-import TropsLogo from "../public/svgs/Clients/tropsLogo.svg";
-import HochlandLogo from "../public/svgs/Clients/hochlandLogo.svg";
-import MinimalistTrainingLogo from "../public/svgs/Clients/minimalistTrainingLogo.svg";
+import { motion } from 'framer-motion'
+import AuchanLogo from '../public/svgs/Clients/auchanLogo.svg'
+import CambraLogo from '../public/svgs/Clients/cambraLogo.svg'
+import DanoneLogo from '../public/svgs/Clients/danoneLogo.svg'
+import EuropastryLogo from '../public/svgs/Clients/europastryLogo.svg'
+import HerLogo from '../public/svgs/Clients/herLogo.svg'
+import InterregLogo from '../public/svgs/Clients/iterregLogo.svg'
+import MeliLogo from '../public/svgs/Clients/meliLogo.svg'
+import MigasaLogo from '../public/svgs/Clients/migasaLogo.svg'
+import MunLogo from '../public/svgs/Clients/munLogo.svg'
+import MyrealfoodLogo from '../public/svgs/Clients/myrealfoodLogo.svg'
+import NeweLogo from '../public/svgs/Clients/neweLogo.svg'
+import RealfoodingLogo from '../public/svgs/Clients/realfoodingLogo.svg'
+import SandevidLogo from '../public/svgs/Clients/sandevidLogo.svg'
+import ShukranLogo from '../public/svgs/Clients/shukranLogo.svg'
+import TropsLogo from '../public/svgs/Clients/tropsLogo.svg'
+import HochlandLogo from '../public/svgs/Clients/hochlandLogo.svg'
+import MinimalistTrainingLogo from '../public/svgs/Clients/minimalistTrainingLogo.svg'
+import KingsLeagueLogo from '../public/svgs/Clients/KingsLeagueLogo.svg'
+import CarrefourLogo from '../public/svgs/Clients/CarrefourLogo.svg'
+import MorrisonsLogo from '../public/svgs/Clients/MorrisonsLogo.svg'
+import BucketsLogo from '../public/svgs/Clients/BucketsLogo.svg'
 
 const container = {
   hidden: { opacity: 0 },
@@ -23,16 +27,16 @@ const container = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.1,
     },
   },
-};
+}
 
 const item = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0 },
-};
+}
 
 const Clients = (props) => {
   return (
@@ -45,7 +49,7 @@ const Clients = (props) => {
           viewport={{ once: true }}
           className="uppercase text-6xl md:text-[15vw] text-biotiflight"
         >
-          {props.lang == "es" ? "Clientes" : "Clients"}
+          {props.lang == 'es' ? 'Clientes' : 'Clients'}
         </motion.h1>
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -54,8 +58,8 @@ const Clients = (props) => {
           viewport={{ once: true }}
           className="line w-full border-b-2 border-black"
         ></motion.div>
-        <div className="flex justify-end mt-8 mb-36 md:mb-60">
-          {props.lang == "es" ? (
+        <div className="flex justify-end mt-8 mb-16 md:mb-60">
+          {props.lang == 'es' ? (
             <motion.span
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -68,14 +72,14 @@ const Clients = (props) => {
               className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
             >
               Trabajamos con todo tipo de clientes, desde grandes empresas hasta
-              startups disruptivas, para construir{" "}
+              startups disruptivas, para construir{' '}
               <span className="font-biotifbold">
                 marcas y productos digitales
-              </span>{" "}
+              </span>{' '}
               de <span className="font-biotifbold">gran impacto.</span> Hemos
               ayudado a más de 50 empresas de distintos sectores a transformar
-              sus negocios y a mejorar su presencia en un mundo digital cada vez
-              más complejo.
+              sus negocios y a mejorar su presencia en un mercado cada vez más
+              complejo.
             </motion.span>
           ) : (
             <motion.span
@@ -90,13 +94,13 @@ const Clients = (props) => {
               className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
             >
               We work with all types of clients, from large enterprises to
-              disruptive startups, to build{" "}
+              disruptive startups, to build{' '}
               <span className="font-biotifbold">
                 high-impact digital brands and products.
-              </span>{" "}
+              </span>{' '}
               We have helped more than 50 companies from different sectors
               transform their businesses and improve their presence in an
-              increasingly complex digital world.
+              increasingly complex market.
             </motion.span>
           )}
         </div>
@@ -159,9 +163,21 @@ const Clients = (props) => {
         <motion.div className="clientLogo" variants={item}>
           <MinimalistTrainingLogo className="clientSvg" />
         </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <KingsLeagueLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <BucketsLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <CarrefourLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MorrisonsLogo className="clientSvg" />
+        </motion.div>
       </motion.div>
     </>
-  );
-};
+  )
+}
 
-export default Clients;
+export default Clients

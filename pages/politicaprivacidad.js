@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const politicaprivacidad = () => {
   return (
@@ -13,7 +13,7 @@ const politicaprivacidad = () => {
         <div className="border-b-2 border-1 border-black w-full"></div>
         <div className="container mt-[100px] text-xl max-w-[1200px]">
           El mero acceso y uso de la web www.marvik.digital no precisa de un
-          registro previo y no recoge por tanto datos de carácter personal.{" "}
+          registro previo y no recoge por tanto datos de carácter personal.{' '}
           <br />
           <br />
           Los datos personales en su caso, facilitados a través de esta página
@@ -23,7 +23,7 @@ const politicaprivacidad = () => {
           <br />
           a) Teléfono: +34 697 40 87 66 <br />
           b) Correo electrónico: contact@marvik.digital <br />
-          c) Domicilio: C. Balmes, 7, Barcelona, España <br />
+          c) Domicilio: Pg. de Gracia, 17, Barcelona, España <br />
           <br />
           <br />
           Los datos podrán ser tratados con las siguientes finalidades,
@@ -128,7 +128,7 @@ const politicaprivacidad = () => {
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default politicaprivacidad;
+export default politicaprivacidad

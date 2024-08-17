@@ -1,17 +1,17 @@
-import MarvikGlyph from "../public/svgs/marvikGlyph.svg";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import MarvikGlyph from '../public/svgs/marvikGlyph.svg'
+import { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const clsStyle = {
-  fill: "none",
-  stroke: "#6752ed",
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
+  fill: 'none',
+  stroke: '#6752ed',
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
   strokeWidth: 5,
-};
+}
 
 const svgVariant = {
   start: {
@@ -24,10 +24,10 @@ const svgVariant = {
     transition: {
       delay: 0,
       duration: 2,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
-};
+}
 
 const svgVariant2 = {
   start: {
@@ -40,31 +40,31 @@ const svgVariant2 = {
     transition: {
       delay: 0.3,
       duration: 1,
-      ease: "easeInOut",
-      repeatType: "reverse",
+      ease: 'easeInOut',
+      repeatType: 'reverse',
       repeat: 1,
     },
   },
-};
+}
 
 const Header = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   const changeLang = () => {
     router.push(router.pathname, router.pathname, {
-      locale: router.locale == "es" ? "en" : "es",
-    });
-  };
+      locale: router.locale == 'es' ? 'en' : 'es',
+    })
+  }
 
-  const [small, setSmall] = useState(false);
+  const [small, setSmall] = useState(false)
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', () =>
         setSmall(window.pageYOffset > 200)
-      );
+      )
     }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -75,7 +75,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 0.3,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               duration: 0.5,
             }}
             exit={{ opacity: 0, y: -80 }}
@@ -94,7 +94,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 0.2,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               duration: 0.5,
             }}
             exit={{ opacity: 0, y: -80 }}
@@ -126,7 +126,7 @@ const Header = () => {
               </svg>
 
               <div className="inline-block w-[130px] md:w-[7vw] lg:w-[7vw]">
-                <Link href={"/"}>
+                <Link href={'/'}>
                   <Image
                     width={200}
                     height={59}
@@ -143,9 +143,9 @@ const Header = () => {
 
             <button
               onClick={(e) => {
-                window.open("/kitdigital", "_self");
+                window.open('/kitdigital', '_self')
               }}
-              className="flex font-biotif mr-16 md:mr-0 text-2xl mt-2 items-center md:absolute md:right-[10rem] border-b-2 mb-2 border-[#791BF5] text-[#791BF5] hover:text-black hover:border-black transition-all uppercase"
+              className="flex font-biotif mr-16 md:mr-0 text-lg md:text-2xl mt-2 items-center md:absolute md:right-[10rem] border-b-2 mb-2 border-[#791BF5] text-[#791BF5] hover:text-black hover:border-black transition-all uppercase"
             >
               KIT DIGITAL
             </button>
@@ -154,7 +154,7 @@ const Header = () => {
               onClick={changeLang}
               className="flex items-center absolute right-7 md:right-20 border-2 border-black px-3 rounded-[20px] hover:bg-black hover:text-white transition-all uppercase"
             >
-              {router.locale == "en" ? "ES" : "EN"}
+              {router.locale == 'en' ? 'ES' : 'EN'}
             </button>
 
             {/* <MenuButton className="w-[10vw] md:w-[5vw] lg:w-[4vw]" /> */}
@@ -162,7 +162,7 @@ const Header = () => {
         )}
       </AnimatePresence>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

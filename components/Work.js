@@ -1,35 +1,35 @@
-import MarvikGlyph from "../public/svgs/marvikGlyph.svg";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import MarvikGlyph from '../public/svgs/marvikGlyph.svg'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 const Work = (props) => {
-  console.log(props);
+  console.log(props)
   const [realfoodingImg, setrealfoodingImg] = useState(
-    "/assets/RealfoodingStatic.jpg"
-  );
-  const [hrImg, setHrImg] = useState("/assets/HRbg.mp4");
-  const [shukranImg, setShukranImg] = useState("/assets/ShukranStatic.jpg");
+    '/assets/RealfoodingStatic.jpg'
+  )
+  const [hrImg, setHrImg] = useState('/assets/HRbg.mp4')
+  const [shukranImg, setShukranImg] = useState('/assets/ShukranStatic.jpg')
   const [myrealfoodImg, setmyrealfoodImg] = useState(
-    "/assets/MyrealfoodAPPStatic.jpg"
-  );
+    '/assets/MyrealfoodAPPStatic.jpg'
+  )
 
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0)
   const logoText =
-    "The future starts here. The future starts here. The future starts here. The future starts here.";
+    'The future starts here. The future starts here. The future starts here. The future starts here.'
 
   function setScroll() {
-    setScrollY(window.scrollY);
+    setScrollY(window.scrollY)
   }
   useEffect(() => {
     function watchScroll() {
-      window.addEventListener("scroll", setScroll);
+      window.addEventListener('scroll', setScroll)
     }
-    watchScroll();
+    watchScroll()
     return () => {
-      window.removeEventListener("scroll", setScroll);
-    };
-  });
+      window.removeEventListener('scroll', setScroll)
+    }
+  })
 
   return (
     <>
@@ -51,7 +51,7 @@ const Work = (props) => {
           className="line w-full border-b-2 border-black"
         ></motion.div>
         <div className="flex justify-end mt-8 mb-20 md:mb-60">
-          {props.lang == "es" ? (
+          {props.lang == 'es' ? (
             <motion.span
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -63,14 +63,15 @@ const Work = (props) => {
               viewport={{ once: true }}
               className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
             >
-              Nuestra pasión por la{" "}
+              Nuestra pasión por la{' '}
               <span className="font-biotifbold">innovación</span> y la búsqueda
-              de la{" "}
-              <span className="font-biotifbold">experiencia de usuario</span>{" "}
+              de la{' '}
+              <span className="font-biotifbold">experiencia de usuario</span>{' '}
               perfecta nos ha llevado a diseñar una aplicación de nutrición que
               ha batido récords. Y a transformar un movimiento de redes sociales
               en una de las marcas de alimentación con más impacto del momento.
-              Y a construir una innovadora plataforma de colaboración B2B.{" "}
+              Y a construir una innovadora plataforma de colaboración B2B. Y la
+              lista podría seguir y seguir.{' '}
               <span className="font-biotifbold">¿Listo para crear juntos?</span>
             </motion.span>
           ) : (
@@ -85,16 +86,16 @@ const Work = (props) => {
               viewport={{ once: true }}
               className="line md:max-w-[750px] pb-[10vw] md:pb-0 text-lg lg:text-2xl"
             >
-              Our passion for{" "}
+              Our passion for{' '}
               <span className="font-biotifbold">innovation</span> and the
-              constant search for{" "}
+              constant search for{' '}
               <span className="font-biotifbold">
                 the perfect user experience
-              </span>{" "}
+              </span>{' '}
               has led us to design a record-breaking nutrition app. And to
               transform a social media movement into one of the most impactful
               food brands of the moment. And to build an innovative B2B
-              collaboration platform.
+              collaboration platform. And the list can go on and on.{' '}
               <span className="font-biotifbold">Ready to create together?</span>
             </motion.span>
           )}
@@ -122,7 +123,7 @@ const Work = (props) => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                   ease: [0.17, 0.55, 0.55, 1],
-                  type: "spring",
+                  type: 'spring',
                   stiffness: 200,
                   damping: 10,
                 }}
@@ -164,42 +165,57 @@ const Work = (props) => {
               viewport={{ once: true }}
               className="line"
             >
-              <h3 className="md:max-w-[400px] text-2xl font-biotifbold mb-6">
-                {props.langInfo.myrealfood.desc}
+              <h3 className="md:max-w-[400px] text-lg md:text-2xl font-biotifbold mb-6">
+                {props.langInfo.realfooding.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl">
-                <li>branding</li>
-                <li>packaging</li>
-                <li>market research</li>
-                <li>ux / ui design</li>
+                <li>{props.lang == 'es' ? 'Branding' : 'Branding'}</li>
                 <li>
-                  {props.lang == "es"
-                    ? "desarrollo tecnológico"
-                    : "tech development"}
+                  {props.lang == 'es'
+                    ? 'F&B Ideación y desarrollo de productos'
+                    : 'F&B Product ideation & development'}
                 </li>
                 <li>
-                  {props.lang == "es"
-                    ? "estrategia de contenido"
-                    : "content strategy"}
+                  {props.lang == 'es'
+                    ? 'Diseño de packaging'
+                    : 'Packaging design'}
                 </li>
                 <li>
-                  {props.lang == "es"
-                    ? "transformación estratégica"
-                    : "strategic transformation"}
+                  {props.lang == 'es'
+                    ? 'Investigación de mercado'
+                    : 'Market Research'}
+                </li>
+                <li>
+                  {props.lang == 'es'
+                    ? 'Estrategia de salida al mercado'
+                    : 'Go-to market strategy'}
+                </li>
+                <li>
+                  {props.lang == 'es'
+                    ? 'Desarrollo de negocio'
+                    : 'Business development'}
+                </li>
+                <li>
+                  {props.lang == 'es'
+                    ? 'Estrategia de contenidos'
+                    : 'Content strategy'}
+                </li>
+                <li>
+                  {props.lang == 'es' ? 'Desarrollo de TI' : 'IT development'}
                 </li>
               </ul>
             </motion.div>
 
             <div className="line text-right self-end text-xl sm:text-[3.5vw] sm:tracking-[.05vw] sm:leading-[3.2vw] text-gray-300 max-w-[950px]">
-              {props.lang == "es"
-                ? "cambiando la industria de la alimentación"
-                : "Revolutionizing the food industry"}
+              {props.lang == 'es'
+                ? 'cambiando la industria de la alimentación'
+                : 'Revolutionizing the food industry'}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full min-h-[750px] md:h-[1320px] mb-[500px] customCursor ">
+      <div className="w-full min-h-[750px] md:h-[1320px] customCursor">
         <video
           className="w-full h-[750px] md:h-full object-cover -z-20 absolute"
           src={hrImg}
@@ -207,59 +223,60 @@ const Work = (props) => {
           loop
           muted
         ></video>
-        <div className="flex h-full justify-between sm:ml-[5vw] py-16 sm:px-14 px-5 z-10">
-          <div className="line md:mix-blend-difference">
-            <motion.h2
-              initial={{ x: -200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.5,
-                duration: 1,
-                ease: [0.17, 0.55, 0.55, 1],
-              }}
-              viewport={{ once: true }}
-              className="font-biotifbold text-5xl md:text-9xl text-white sm:pt-[7%] mb-6 sm:mb-16 pt-12 z-10 mix-blend-difference"
-            >
-              Hub &<br /> Rock
-            </motion.h2>
+      </div>
 
-            <motion.div
-              initial={{ x: -200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.8,
-                duration: 1,
-                ease: [0.17, 0.55, 0.55, 1],
-              }}
-              viewport={{ once: true }}
-              className="sm:ml-12"
-            >
-              <h3 className="text-white max-w-[450px] text-xl font-biotifbold mb-6  mix-blend-difference">
-                {props.langInfo.hubrock.desc}
-              </h3>
-              <ul className="list-none text-gray-400 text-xl mb-16">
-                <li>
-                  {props.lang == "es"
-                    ? "desarrollo tecnológico"
-                    : "tech development"}
-                </li>
-                <li>ux / ui design</li>
-                <li>branding</li>
-                <li>market research</li>
-                <li>
-                  {props.lang == "es"
-                    ? "estrategia go-to-market"
-                    : "go-to market strategy"}
-                </li>
-              </ul>
-            </motion.div>
-          </div>
+      <div className="flex justify-between sm:ml-[5vw] sm:px-14 px-5 z-10 mb-[200px] sm:mb-[300px]">
+        <div className="line">
+          <motion.h2
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+            viewport={{ once: true }}
+            className="font-biotifbold text-5xl md:text-9xl text-black mb-6 sm:mb-16 pt-12 z-10"
+          >
+            Hub &<br /> Rock
+          </motion.h2>
 
-          <div className="line self-end text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
-            {props.lang == "es" ? "innovación." : "innovation"}
-            <br />
-            {props.lang == "es" ? "colaboración." : "collaboration"}.
-          </div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.8,
+              duration: 1,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+            viewport={{ once: true }}
+            className="sm:ml-12"
+          >
+            <h3 className="text-black max-w-[450px] text-xl font-biotifbold mb-6  mix-blend-difference">
+              {props.langInfo.hubrock.desc}
+            </h3>
+            <ul className="list-none text-gray-400 text-xl mb-16">
+              <li>{props.lang == 'es' ? 'Desarrollo TI' : 'IT development'}</li>
+              <li>{props.lang == 'es' ? 'Diseño UX/UI' : 'UX/UI design'}</li>
+              <li>{props.lang == 'es' ? 'Branding' : 'Branding'}</li>
+              <li>
+                {props.lang == 'es'
+                  ? 'Estudio de mercado e ideación de producto'
+                  : 'Market Research & Product ideation'}
+              </li>
+              <li>
+                {props.lang == 'es'
+                  ? 'Estrategia de salida al mercado'
+                  : 'Go-to-market strategy'}
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+
+        <div className="line pt-12 text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
+          {props.lang == 'es' ? 'innovación.' : 'innovation'}
+          <br />
+          {props.lang == 'es' ? 'colaboración.' : 'collaboration'}.
         </div>
       </div>
 
@@ -286,7 +303,7 @@ const Work = (props) => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               ease: [0.17, 0.55, 0.55, 1],
-              type: "spring",
+              type: 'spring',
               stiffness: 200,
               damping: 10,
             }}
@@ -331,23 +348,23 @@ const Work = (props) => {
               {props.langInfo.shukran.desc}
             </h3>
             <ul className="list-none text-gray-400 text-xl mb-16">
-              <li>branding</li>
-              <li>packaging</li>
+              <li>Branding</li>
+              <li>Packaging</li>
               <li>
-                {props.lang == "es"
-                  ? "desarrollo tecnológico"
-                  : "technological development"}
+                {props.lang == 'es'
+                  ? 'Desarrollo tecnológico'
+                  : 'Technological development'}
               </li>
-              <li>ux / ui design</li>
+              <li>UX/UI design</li>
               <li>
-                {props.lang == "es"
-                  ? "estrategia de contenido"
-                  : "content strategy"}
+                {props.lang == 'es'
+                  ? 'Estrategia de contenido'
+                  : 'Content strategy'}
               </li>
               <li>
-                {props.lang == "es"
-                  ? "campañas de marketing digital"
-                  : "digital marketing campaigns"}
+                {props.lang == 'es'
+                  ? 'Campañas de marketing digital'
+                  : 'Digital marketing campaigns'}
               </li>
             </ul>
           </motion.div>
@@ -396,7 +413,7 @@ const Work = (props) => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
                 ease: [0.17, 0.55, 0.55, 1],
-                type: "spring",
+                type: 'spring',
                 stiffness: 200,
                 damping: 10,
               }}
@@ -453,16 +470,21 @@ const Work = (props) => {
               viewport={{ once: true }}
               className="line px-5 md:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
-              <h3 className="max-w-[570px] text-2xl font-biotifbold mb-6 mt-20">
+              <h3 className="max-w-[570px] text-lg md:text-2xl font-biotifbold mb-6 mt-20">
                 {props.langInfo.realfooding.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl mb-16">
-                <li>ux/ui design</li>
-                <li>branding</li>
+                <li>{props.lang == 'es' ? 'Branding' : 'Branding'}</li>
+                <li>{props.lang == 'es' ? 'Diseño UX/UI ' : 'UX/UI Design'}</li>
                 <li>
-                  {props.lang == "es"
-                    ? "estrategia go-to-market"
-                    : "go-to market strategy"}
+                  {props.lang == 'es'
+                    ? 'Investigación de mercado'
+                    : 'Market Research'}
+                </li>
+                <li>
+                  {props.lang == 'es'
+                    ? 'Estrategia de transformación'
+                    : 'Strategic Transformation'}
                 </li>
               </ul>
             </motion.div>
@@ -478,9 +500,9 @@ const Work = (props) => {
             className="absolute w-full h-full"
           >
             <p>
-              {logoText.split("").map((character, i) => (
+              {logoText.split('').map((character, i) => (
                 <span
-                  key={"future" + i}
+                  key={'future' + i}
                   style={{ transform: `rotate(${i * 3.766}deg)` }}
                   className={`absolute left-[50%] tracking-normal text-sm md:text-2xl text-[#791BF5] origin-[0_80px] md:origin-[0_180px]`}
                 >
@@ -495,12 +517,12 @@ const Work = (props) => {
             href="#marvikFooter"
             className="text-lg sm:text-4xl pb-2 text-purple-600 border-b-2 border-purple-600 font-biotifbold uppercase"
           >
-            <span>{props.lang == "es" ? "Contáctanos" : "Contact us"}</span>
+            <span>{props.lang == 'es' ? 'Contáctanos' : 'Contact us'}</span>
           </a>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

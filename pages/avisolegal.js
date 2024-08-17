@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const avisolegal = () => {
   return (
@@ -33,8 +33,8 @@ const avisolegal = () => {
             1 / DATOS DEL RESPONSABLE TITULAR DEL SITIO WEB.
           </h3>
           <span>
-            Nombre del titular: Marvik Digital Domicilio social: C/ Balmes 7,
-            Barcelona
+            Nombre del titular: Marvik Digital Domicilio social: Pg. de Gracia,
+            17, Barcelona
             <br />
             C.I.F.: X5824642F
             <br />
@@ -236,7 +236,7 @@ const avisolegal = () => {
 
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default avisolegal;
+export default avisolegal
