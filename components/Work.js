@@ -132,6 +132,7 @@ const Work = (props) => {
               >
                 <div className="2xl:min-h-[1200px]">
                   <video
+                    playsInline
                     autoPlay={true}
                     loop
                     muted
@@ -217,6 +218,7 @@ const Work = (props) => {
 
       <div className="w-full min-h-[750px] md:h-[1320px] customCursor">
         <video
+          playsInline
           className="w-full h-[750px] md:h-full object-cover -z-20 absolute"
           src={hrImg}
           autoPlay
@@ -313,6 +315,7 @@ const Work = (props) => {
           >
             <div className="xl:min-h-[1100px] xl:min-w-[800px]">
               <video
+                playsInline
                 autoPlay
                 loop
                 muted
@@ -423,6 +426,7 @@ const Work = (props) => {
             >
               <div className="xl:min-h-[1100px] xl:min-w-[800px]">
                 <video
+                  playsInline
                   autoPlay
                   loop
                   muted

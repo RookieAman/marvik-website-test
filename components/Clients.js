@@ -126,6 +126,19 @@ const Clients = (props) => {
         </motion.div>
 
         <motion.div className="clientLogo" variants={item}>
+          <KingsLeagueLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <BucketsLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <CarrefourLogo className="clientSvg" />
+        </motion.div>
+        <motion.div className="clientLogo" variants={item}>
+          <MorrisonsLogo className="clientSvg" />
+        </motion.div>
+
+        <motion.div className="clientLogo" variants={item}>
           <MigasaLogo className="clientSvg" />
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
@@ -162,18 +175,6 @@ const Clients = (props) => {
         </motion.div>
         <motion.div className="clientLogo" variants={item}>
           <MinimalistTrainingLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <KingsLeagueLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <BucketsLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <CarrefourLogo className="clientSvg" />
-        </motion.div>
-        <motion.div className="clientLogo" variants={item}>
-          <MorrisonsLogo className="clientSvg" />
         </motion.div>
       </motion.div>
     </>
