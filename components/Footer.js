@@ -32,9 +32,10 @@ const Footer = (props) => {
               <br /> Barcelona, España
             </p>
             <div className="w-full border-b-2 border-black my-8"></div>
-            <p>
+            <p className="mb-6">
               650 California St., Floor 7 <br /> San Francisco, California
             </p>
+            <a href="mailto:contact@marvik.digital">contact@marvik.digital</a>
           </div>
         </div>
         <div className="ml-0 xl:ml-20">

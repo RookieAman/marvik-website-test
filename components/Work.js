@@ -276,7 +276,7 @@ const Work = (props) => {
         </div>
 
         <div className="line pt-12 text-2xl sm:text-[6.5vw] sm:tracking-[.05vw] sm:leading-[5.0vw] text-gray-300">
-          {props.lang == 'es' ? 'innovación.' : 'innovation'}
+          {props.lang == 'es' ? 'innovación.' : 'innovative'}
           <br />
           {props.lang == 'es' ? 'colaboración.' : 'collaboration'}.
         </div>
@@ -475,7 +475,7 @@ const Work = (props) => {
               className="line px-5 md:absolute sm:ml-[34px] mt-[50px] md:mt-[100px] xl:mt-[200px]"
             >
               <h3 className="max-w-[570px] text-lg md:text-2xl font-biotifbold mb-6 mt-20">
-                {props.langInfo.realfooding.desc}
+                {props.langInfo.myrealfood.desc}
               </h3>
               <ul className="list-none text-gray-400 text-xl mb-16">
                 <li>{props.lang == 'es' ? 'Branding' : 'Branding'}</li>
